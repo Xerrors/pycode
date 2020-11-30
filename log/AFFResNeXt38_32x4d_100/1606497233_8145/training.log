@@ -1,0 +1,1405 @@
+[INFO] 2020-11-28 01:13:53,981: 
+Name: AFFResNeXt38_32x4d_100
+Device: cuda:0
+Path: ./log/AFFResNeXt38_32x4d_100/1606497233
+Debug: False
+---
+Epochs: 640
+Batch Size: 128
+Num Worker: 8
+---
+Base LR: 0.2
+LR Decay: 0.1
+Weight Decay: 0.0001
+Momentum: 0.9
+Milestones: [300,450]
+Init Weight: Xavier
+---
+Nesterov: True
+Auto Augment: True
+Cosine: False
+Label Smoothing: False
+No Weight Decay: True
+---
+
+
+[INFO] 2020-11-28 01:16:26,061: Epoch- 0 , T-Loss: 5.040, E-Loss: 4.557, Time: 148.70s, Need: 26.44h, LR: 0.200, Acc: 1.65%
+
+[INFO] 2020-11-28 01:18:55,251: Epoch- 1 , T-Loss: 4.529, E-Loss: 4.371, Time: 148.97s, Need: 26.44h, LR: 0.200, Acc: 3.78%
+
+[INFO] 2020-11-28 01:21:24,472: Epoch- 2 , T-Loss: 4.403, E-Loss: 4.151, Time: 149.02s, Need: 26.41h, LR: 0.200, Acc: 5.56%
+
+[INFO] 2020-11-28 01:23:53,687: Epoch- 3 , T-Loss: 4.278, E-Loss: 3.977, Time: 148.99s, Need: 26.36h, LR: 0.200, Acc: 8.62%
+
+[INFO] 2020-11-28 01:26:22,915: Epoch- 4 , T-Loss: 4.127, E-Loss: 3.770, Time: 149.01s, Need: 26.33h, LR: 0.200, Acc: 11.25%
+
+[INFO] 2020-11-28 01:28:52,189: Epoch- 5 , T-Loss: 3.979, E-Loss: 3.620, Time: 149.04s, Need: 26.29h, LR: 0.200, Acc: 13.35%
+
+[INFO] 2020-11-28 01:31:21,291: Epoch- 6 , T-Loss: 3.815, E-Loss: 3.416, Time: 148.88s, Need: 26.22h, LR: 0.200, Acc: 17.09%
+
+[INFO] 2020-11-28 01:33:50,407: Epoch- 7 , T-Loss: 3.580, E-Loss: 3.146, Time: 148.86s, Need: 26.17h, LR: 0.200, Acc: 22.40%
+
+[INFO] 2020-11-28 01:36:19,474: Epoch- 8 , T-Loss: 3.305, E-Loss: 2.839, Time: 148.82s, Need: 26.13h, LR: 0.200, Acc: 28.03%
+
+[INFO] 2020-11-28 01:38:48,664: Epoch- 9 , T-Loss: 3.005, E-Loss: 2.510, Time: 148.98s, Need: 26.11h, LR: 0.200, Acc: 35.15%
+
+[INFO] 2020-11-28 01:41:17,826: Epoch-10 , T-Loss: 2.745, E-Loss: 2.281, Time: 148.91s, Need: 26.06h, LR: 0.200, Acc: 39.69%
+
+[INFO] 2020-11-28 01:43:46,858: Epoch-11 , T-Loss: 2.534, E-Loss: 2.076, Time: 148.80s, Need: 26.00h, LR: 0.200, Acc: 44.94%
+
+[INFO] 2020-11-28 01:46:16,033: Epoch-12 , T-Loss: 2.389, E-Loss: 2.017, Time: 148.97s, Need: 25.99h, LR: 0.200, Acc: 46.13%
+
+[INFO] 2020-11-28 01:48:45,213: Epoch-13 , T-Loss: 2.291, E-Loss: 1.885, Time: 148.96s, Need: 25.94h, LR: 0.200, Acc: 49.66%
+
+[INFO] 2020-11-28 01:51:14,373: Epoch-14 , T-Loss: 2.129, E-Loss: 1.882, Time: 148.94s, Need: 25.90h, LR: 0.200, Acc: 49.27%
+
+[INFO] 2020-11-28 01:53:43,521: Epoch-15 , T-Loss: 1.993, E-Loss: 1.809, Time: 148.92s, Need: 25.85h, LR: 0.200, Acc: 51.51%
+
+[INFO] 2020-11-28 01:56:12,732: Epoch-16 , T-Loss: 1.883, E-Loss: 1.618, Time: 148.97s, Need: 25.82h, LR: 0.200, Acc: 55.28%
+
+[INFO] 2020-11-28 01:58:42,140: Epoch-17 , T-Loss: 1.792, E-Loss: 1.618, Time: 148.98s, Need: 25.78h, LR: 0.200, Acc: 57.72%
+
+[INFO] 2020-11-28 02:01:11,301: Epoch-18 , T-Loss: 1.722, E-Loss: 1.495, Time: 148.93s, Need: 25.73h, LR: 0.200, Acc: 59.05%
+
+[INFO] 2020-11-28 02:03:40,424: Epoch-19 , T-Loss: 1.648, E-Loss: 1.387, Time: 148.83s, Need: 25.67h, LR: 0.200, Acc: 60.80%
+
+[INFO] 2020-11-28 02:03:40,711: [  BEST  ] - A best model in epoch 19 - 60.800%
+
+[INFO] 2020-11-28 02:06:09,624: Epoch-20 , T-Loss: 1.623, E-Loss: 1.401, Time: 148.91s, Need: 25.65h, LR: 0.200, Acc: 61.39%
+
+[INFO] 2020-11-28 02:06:09,917: [  BEST  ] - A best model in epoch 20 - 61.390%
+
+[INFO] 2020-11-28 02:08:38,861: Epoch-21 , T-Loss: 1.557, E-Loss: 1.427, Time: 148.94s, Need: 25.61h, LR: 0.200, Acc: 60.41%
+
+[INFO] 2020-11-28 02:11:08,001: Epoch-22 , T-Loss: 1.554, E-Loss: 1.824, Time: 148.92s, Need: 25.56h, LR: 0.200, Acc: 54.78%
+
+[INFO] 2020-11-28 02:13:37,119: Epoch-23 , T-Loss: 1.513, E-Loss: 1.258, Time: 148.89s, Need: 25.52h, LR: 0.200, Acc: 64.32%
+
+[INFO] 2020-11-28 02:13:37,398: [  BEST  ] - A best model in epoch 23 - 64.320%
+
+[INFO] 2020-11-28 02:16:06,339: Epoch-24 , T-Loss: 1.392, E-Loss: 1.238, Time: 148.94s, Need: 25.49h, LR: 0.200, Acc: 65.59%
+
+[INFO] 2020-11-28 02:16:06,612: [  BEST  ] - A best model in epoch 24 - 65.590%
+
+[INFO] 2020-11-28 02:18:35,536: Epoch-25 , T-Loss: 1.339, E-Loss: 1.175, Time: 148.92s, Need: 25.44h, LR: 0.200, Acc: 66.70%
+
+[INFO] 2020-11-28 02:18:35,804: [  BEST  ] - A best model in epoch 25 - 66.700%
+
+[INFO] 2020-11-28 02:21:04,767: Epoch-26 , T-Loss: 1.277, E-Loss: 1.203, Time: 148.96s, Need: 25.41h, LR: 0.200, Acc: 66.81%
+
+[INFO] 2020-11-28 02:21:05,123: [  BEST  ] - A best model in epoch 26 - 66.810%
+
+[INFO] 2020-11-28 02:23:34,002: Epoch-27 , T-Loss: 1.219, E-Loss: 1.234, Time: 148.88s, Need: 25.35h, LR: 0.200, Acc: 65.52%
+
+[INFO] 2020-11-28 02:26:03,056: Epoch-28 , T-Loss: 1.232, E-Loss: 1.173, Time: 148.82s, Need: 25.30h, LR: 0.200, Acc: 67.28%
+
+[INFO] 2020-11-28 02:26:03,343: [  BEST  ] - A best model in epoch 28 - 67.280%
+
+[INFO] 2020-11-28 02:28:32,245: Epoch-29 , T-Loss: 1.205, E-Loss: 1.204, Time: 148.90s, Need: 25.27h, LR: 0.200, Acc: 67.23%
+
+[INFO] 2020-11-28 02:31:01,564: Epoch-30 , T-Loss: 1.175, E-Loss: 1.161, Time: 149.08s, Need: 25.26h, LR: 0.200, Acc: 67.56%
+
+[INFO] 2020-11-28 02:31:01,852: [  BEST  ] - A best model in epoch 30 - 67.560%
+
+[INFO] 2020-11-28 02:33:30,832: Epoch-31 , T-Loss: 1.120, E-Loss: 1.149, Time: 148.98s, Need: 25.20h, LR: 0.200, Acc: 67.97%
+
+[INFO] 2020-11-28 02:33:31,120: [  BEST  ] - A best model in epoch 31 - 67.970%
+
+[INFO] 2020-11-28 02:35:59,903: Epoch-32 , T-Loss: 1.082, E-Loss: 1.180, Time: 148.78s, Need: 25.13h, LR: 0.200, Acc: 67.65%
+
+[INFO] 2020-11-28 02:38:29,059: Epoch-33 , T-Loss: 1.099, E-Loss: 1.165, Time: 148.92s, Need: 25.11h, LR: 0.200, Acc: 67.83%
+
+[INFO] 2020-11-28 02:40:58,460: Epoch-34 , T-Loss: 1.065, E-Loss: 1.154, Time: 149.15s, Need: 25.11h, LR: 0.200, Acc: 68.68%
+
+[INFO] 2020-11-28 02:40:58,767: [  BEST  ] - A best model in epoch 34 - 68.680%
+
+[INFO] 2020-11-28 02:43:27,691: Epoch-35 , T-Loss: 1.061, E-Loss: 1.246, Time: 148.92s, Need: 25.03h, LR: 0.200, Acc: 65.99%
+
+[INFO] 2020-11-28 02:45:57,011: Epoch-36 , T-Loss: 1.034, E-Loss: 1.157, Time: 148.99s, Need: 25.00h, LR: 0.200, Acc: 69.09%
+
+[INFO] 2020-11-28 02:45:57,299: [  BEST  ] - A best model in epoch 36 - 69.090%
+
+[INFO] 2020-11-28 02:48:26,268: Epoch-37 , T-Loss: 0.996, E-Loss: 1.229, Time: 148.97s, Need: 24.95h, LR: 0.200, Acc: 66.86%
+
+[INFO] 2020-11-28 02:50:55,541: Epoch-38 , T-Loss: 0.995, E-Loss: 1.192, Time: 148.99s, Need: 24.92h, LR: 0.200, Acc: 68.76%
+
+[INFO] 2020-11-28 02:53:24,725: Epoch-39 , T-Loss: 0.970, E-Loss: 1.158, Time: 148.94s, Need: 24.86h, LR: 0.200, Acc: 69.17%
+
+[INFO] 2020-11-28 02:53:25,236: [  BEST  ] - A best model in epoch 39 - 69.170%
+
+[INFO] 2020-11-28 02:55:54,046: Epoch-40 , T-Loss: 1.030, E-Loss: 1.155, Time: 148.81s, Need: 24.80h, LR: 0.200, Acc: 69.57%
+
+[INFO] 2020-11-28 02:55:54,338: [  BEST  ] - A best model in epoch 40 - 69.570%
+
+[INFO] 2020-11-28 02:58:23,398: Epoch-41 , T-Loss: 0.940, E-Loss: 1.416, Time: 149.06s, Need: 24.80h, LR: 0.200, Acc: 63.62%
+
+[INFO] 2020-11-28 03:00:52,622: Epoch-42 , T-Loss: 0.987, E-Loss: 1.171, Time: 149.00s, Need: 24.75h, LR: 0.200, Acc: 68.68%
+
+[INFO] 2020-11-28 03:03:21,738: Epoch-43 , T-Loss: 0.975, E-Loss: 1.108, Time: 148.91s, Need: 24.69h, LR: 0.200, Acc: 70.43%
+
+[INFO] 2020-11-28 03:03:22,008: [  BEST  ] - A best model in epoch 43 - 70.430%
+
+[INFO] 2020-11-28 03:05:50,978: Epoch-44 , T-Loss: 1.010, E-Loss: 1.215, Time: 148.97s, Need: 24.66h, LR: 0.200, Acc: 68.44%
+
+[INFO] 2020-11-28 03:08:20,261: Epoch-45 , T-Loss: 0.912, E-Loss: 1.223, Time: 148.97s, Need: 24.62h, LR: 0.200, Acc: 68.00%
+
+[INFO] 2020-11-28 03:10:49,480: Epoch-46 , T-Loss: 0.954, E-Loss: 1.233, Time: 149.00s, Need: 24.59h, LR: 0.200, Acc: 67.98%
+
+[INFO] 2020-11-28 03:13:18,629: Epoch-47 , T-Loss: 1.228, E-Loss: 1.229, Time: 148.94s, Need: 24.53h, LR: 0.200, Acc: 67.15%
+
+[INFO] 2020-11-28 03:15:47,668: Epoch-48 , T-Loss: 0.988, E-Loss: 1.156, Time: 148.83s, Need: 24.47h, LR: 0.200, Acc: 69.85%
+
+[INFO] 2020-11-28 03:18:16,831: Epoch-49 , T-Loss: 0.893, E-Loss: 1.010, Time: 148.94s, Need: 24.45h, LR: 0.200, Acc: 71.75%
+
+[INFO] 2020-11-28 03:18:17,101: [  BEST  ] - A best model in epoch 49 - 71.750%
+
+[INFO] 2020-11-28 03:20:46,190: Epoch-50 , T-Loss: 0.847, E-Loss: 1.131, Time: 149.09s, Need: 24.43h, LR: 0.200, Acc: 70.29%
+
+[INFO] 2020-11-28 03:23:15,340: Epoch-51 , T-Loss: 0.825, E-Loss: 1.140, Time: 148.92s, Need: 24.37h, LR: 0.200, Acc: 70.59%
+
+[INFO] 2020-11-28 03:25:44,350: Epoch-52 , T-Loss: 0.817, E-Loss: 1.109, Time: 148.79s, Need: 24.30h, LR: 0.200, Acc: 71.14%
+
+[INFO] 2020-11-28 03:28:13,504: Epoch-53 , T-Loss: 0.790, E-Loss: 1.069, Time: 148.94s, Need: 24.29h, LR: 0.200, Acc: 71.77%
+
+[INFO] 2020-11-28 03:28:13,787: [  BEST  ] - A best model in epoch 53 - 71.770%
+
+[INFO] 2020-11-28 03:30:42,930: Epoch-54 , T-Loss: 0.793, E-Loss: 1.110, Time: 149.14s, Need: 24.28h, LR: 0.200, Acc: 70.82%
+
+[INFO] 2020-11-28 03:33:12,043: Epoch-55 , T-Loss: 0.789, E-Loss: 1.064, Time: 148.88s, Need: 24.19h, LR: 0.200, Acc: 72.44%
+
+[INFO] 2020-11-28 03:33:12,443: [  BEST  ] - A best model in epoch 55 - 72.440%
+
+[INFO] 2020-11-28 03:35:41,266: Epoch-56 , T-Loss: 0.776, E-Loss: 1.146, Time: 148.82s, Need: 24.14h, LR: 0.200, Acc: 70.98%
+
+[INFO] 2020-11-28 03:38:10,470: Epoch-57 , T-Loss: 0.785, E-Loss: 1.174, Time: 148.96s, Need: 24.12h, LR: 0.200, Acc: 69.67%
+
+[INFO] 2020-11-28 03:40:39,739: Epoch-58 , T-Loss: 0.822, E-Loss: 1.152, Time: 149.06s, Need: 24.10h, LR: 0.200, Acc: 70.33%
+
+[INFO] 2020-11-28 03:43:08,831: Epoch-59 , T-Loss: 0.791, E-Loss: 1.124, Time: 148.84s, Need: 24.02h, LR: 0.200, Acc: 71.37%
+
+[INFO] 2020-11-28 03:45:37,946: Epoch-60 , T-Loss: 0.749, E-Loss: 1.171, Time: 148.89s, Need: 23.99h, LR: 0.200, Acc: 70.55%
+
+[INFO] 2020-11-28 03:48:07,058: Epoch-61 , T-Loss: 0.746, E-Loss: 1.168, Time: 148.90s, Need: 23.95h, LR: 0.200, Acc: 70.52%
+
+[INFO] 2020-11-28 03:50:36,318: Epoch-62 , T-Loss: 0.729, E-Loss: 1.156, Time: 149.03s, Need: 23.93h, LR: 0.200, Acc: 70.60%
+
+[INFO] 2020-11-28 03:53:05,468: Epoch-63 , T-Loss: 0.740, E-Loss: 1.174, Time: 148.92s, Need: 23.87h, LR: 0.200, Acc: 69.59%
+
+[INFO] 2020-11-28 03:55:34,570: Epoch-64 , T-Loss: 0.802, E-Loss: 1.105, Time: 148.88s, Need: 23.82h, LR: 0.200, Acc: 71.25%
+
+[INFO] 2020-11-28 03:58:03,761: Epoch-65 , T-Loss: 0.760, E-Loss: 1.165, Time: 148.96s, Need: 23.79h, LR: 0.200, Acc: 70.87%
+
+[INFO] 2020-11-28 04:00:32,973: Epoch-66 , T-Loss: 0.753, E-Loss: 1.193, Time: 148.99s, Need: 23.76h, LR: 0.200, Acc: 70.24%
+
+[INFO] 2020-11-28 04:03:02,032: Epoch-67 , T-Loss: 0.731, E-Loss: 1.079, Time: 148.83s, Need: 23.69h, LR: 0.200, Acc: 71.66%
+
+[INFO] 2020-11-28 04:05:31,075: Epoch-68 , T-Loss: 0.704, E-Loss: 1.122, Time: 148.81s, Need: 23.64h, LR: 0.200, Acc: 71.43%
+
+[INFO] 2020-11-28 04:08:00,172: Epoch-69 , T-Loss: 0.704, E-Loss: 1.146, Time: 148.86s, Need: 23.61h, LR: 0.200, Acc: 71.70%
+
+[INFO] 2020-11-28 04:10:29,498: Epoch-70 , T-Loss: 0.702, E-Loss: 1.181, Time: 149.09s, Need: 23.61h, LR: 0.200, Acc: 71.11%
+
+[INFO] 2020-11-28 04:12:58,813: Epoch-71 , T-Loss: 0.709, E-Loss: 1.176, Time: 148.93s, Need: 23.54h, LR: 0.200, Acc: 70.22%
+
+[INFO] 2020-11-28 04:15:27,901: Epoch-72 , T-Loss: 0.700, E-Loss: 1.238, Time: 148.86s, Need: 23.49h, LR: 0.200, Acc: 70.04%
+
+[INFO] 2020-11-28 04:17:57,045: Epoch-73 , T-Loss: 0.687, E-Loss: 1.162, Time: 148.92s, Need: 23.45h, LR: 0.200, Acc: 71.12%
+
+[INFO] 2020-11-28 04:20:26,323: Epoch-74 , T-Loss: 0.675, E-Loss: 1.178, Time: 149.06s, Need: 23.44h, LR: 0.200, Acc: 71.48%
+
+[INFO] 2020-11-28 04:22:55,592: Epoch-75 , T-Loss: 0.679, E-Loss: 1.177, Time: 149.04s, Need: 23.39h, LR: 0.200, Acc: 71.34%
+
+[INFO] 2020-11-28 04:25:24,716: Epoch-76 , T-Loss: 0.670, E-Loss: 1.190, Time: 148.90s, Need: 23.33h, LR: 0.200, Acc: 71.13%
+
+[INFO] 2020-11-28 04:27:53,840: Epoch-77 , T-Loss: 0.676, E-Loss: 1.198, Time: 148.89s, Need: 23.29h, LR: 0.200, Acc: 70.90%
+
+[INFO] 2020-11-28 04:30:23,241: Epoch-78 , T-Loss: 0.674, E-Loss: 1.208, Time: 149.18s, Need: 23.29h, LR: 0.200, Acc: 70.68%
+
+[INFO] 2020-11-28 04:32:52,675: Epoch-79 , T-Loss: 0.667, E-Loss: 1.167, Time: 148.98s, Need: 23.22h, LR: 0.200, Acc: 71.47%
+
+[INFO] 2020-11-28 04:35:21,809: Epoch-80 , T-Loss: 0.662, E-Loss: 1.146, Time: 148.91s, Need: 23.16h, LR: 0.200, Acc: 71.84%
+
+[INFO] 2020-11-28 04:37:50,682: Epoch-81 , T-Loss: 0.654, E-Loss: 1.148, Time: 148.64s, Need: 23.08h, LR: 0.200, Acc: 71.86%
+
+[INFO] 2020-11-28 04:40:19,633: Epoch-82 , T-Loss: 0.660, E-Loss: 1.168, Time: 148.72s, Need: 23.05h, LR: 0.200, Acc: 71.91%
+
+[INFO] 2020-11-28 04:42:48,542: Epoch-83 , T-Loss: 0.661, E-Loss: 1.219, Time: 148.68s, Need: 23.00h, LR: 0.200, Acc: 70.19%
+
+[INFO] 2020-11-28 04:45:17,323: Epoch-84 , T-Loss: 0.660, E-Loss: 1.183, Time: 148.56s, Need: 22.94h, LR: 0.200, Acc: 70.45%
+
+[INFO] 2020-11-28 04:47:46,185: Epoch-85 , T-Loss: 0.706, E-Loss: 1.203, Time: 148.64s, Need: 22.91h, LR: 0.200, Acc: 71.68%
+
+[INFO] 2020-11-28 04:50:15,137: Epoch-86 , T-Loss: 0.661, E-Loss: 1.192, Time: 148.75s, Need: 22.89h, LR: 0.200, Acc: 71.03%
+
+[INFO] 2020-11-28 04:52:43,967: Epoch-87 , T-Loss: 0.647, E-Loss: 1.137, Time: 148.62s, Need: 22.83h, LR: 0.200, Acc: 71.60%
+
+[INFO] 2020-11-28 04:55:13,086: Epoch-88 , T-Loss: 0.634, E-Loss: 1.165, Time: 148.90s, Need: 22.83h, LR: 0.200, Acc: 71.83%
+
+[INFO] 2020-11-28 04:57:42,091: Epoch-89 , T-Loss: 0.649, E-Loss: 1.147, Time: 148.61s, Need: 22.75h, LR: 0.200, Acc: 71.95%
+
+[INFO] 2020-11-28 05:00:11,182: Epoch-90 , T-Loss: 0.646, E-Loss: 1.133, Time: 148.87s, Need: 22.74h, LR: 0.200, Acc: 72.17%
+
+[INFO] 2020-11-28 05:02:40,022: Epoch-91 , T-Loss: 0.635, E-Loss: 1.191, Time: 148.62s, Need: 22.66h, LR: 0.200, Acc: 70.97%
+
+[INFO] 2020-11-28 05:05:08,781: Epoch-92 , T-Loss: 0.634, E-Loss: 1.128, Time: 148.54s, Need: 22.61h, LR: 0.200, Acc: 71.77%
+
+[INFO] 2020-11-28 05:07:37,666: Epoch-93 , T-Loss: 0.615, E-Loss: 1.140, Time: 148.68s, Need: 22.59h, LR: 0.200, Acc: 72.28%
+
+[INFO] 2020-11-28 05:10:06,568: Epoch-94 , T-Loss: 0.646, E-Loss: 1.204, Time: 148.69s, Need: 22.55h, LR: 0.200, Acc: 70.48%
+
+[INFO] 2020-11-28 05:12:35,566: Epoch-95 , T-Loss: 0.625, E-Loss: 1.175, Time: 148.78s, Need: 22.52h, LR: 0.200, Acc: 71.65%
+
+[INFO] 2020-11-28 05:15:04,431: Epoch-96 , T-Loss: 0.619, E-Loss: 1.196, Time: 148.65s, Need: 22.46h, LR: 0.200, Acc: 71.87%
+
+[INFO] 2020-11-28 05:17:33,268: Epoch-97 , T-Loss: 0.619, E-Loss: 1.186, Time: 148.62s, Need: 22.42h, LR: 0.200, Acc: 72.05%
+
+[INFO] 2020-11-28 05:20:01,985: Epoch-98 , T-Loss: 0.633, E-Loss: 1.119, Time: 148.50s, Need: 22.36h, LR: 0.200, Acc: 72.41%
+
+[INFO] 2020-11-28 05:22:30,821: Epoch-99 , T-Loss: 0.608, E-Loss: 1.197, Time: 148.63s, Need: 22.34h, LR: 0.200, Acc: 71.94%
+
+[INFO] 2020-11-28 05:24:59,773: Epoch-100, T-Loss: 0.616, E-Loss: 1.150, Time: 148.73s, Need: 22.31h, LR: 0.200, Acc: 72.28%
+
+[INFO] 2020-11-28 05:27:28,660: Epoch-101, T-Loss: 0.599, E-Loss: 1.142, Time: 148.66s, Need: 22.26h, LR: 0.200, Acc: 72.80%
+
+[INFO] 2020-11-28 05:27:28,934: [  BEST  ] - A best model in epoch 101 - 72.800%
+
+[INFO] 2020-11-28 05:29:57,474: Epoch-102, T-Loss: 0.621, E-Loss: 1.223, Time: 148.54s, Need: 22.20h, LR: 0.200, Acc: 70.94%
+
+[INFO] 2020-11-28 05:32:26,340: Epoch-103, T-Loss: 0.605, E-Loss: 1.152, Time: 148.65s, Need: 22.17h, LR: 0.200, Acc: 72.51%
+
+[INFO] 2020-11-28 05:34:55,459: Epoch-104, T-Loss: 0.600, E-Loss: 1.142, Time: 148.90s, Need: 22.17h, LR: 0.200, Acc: 72.21%
+
+[INFO] 2020-11-28 05:37:24,244: Epoch-105, T-Loss: 0.601, E-Loss: 1.134, Time: 148.58s, Need: 22.08h, LR: 0.200, Acc: 72.05%
+
+[INFO] 2020-11-28 05:39:53,132: Epoch-106, T-Loss: 0.605, E-Loss: 1.252, Time: 148.69s, Need: 22.06h, LR: 0.200, Acc: 70.91%
+
+[INFO] 2020-11-28 05:42:22,137: Epoch-107, T-Loss: 0.596, E-Loss: 1.160, Time: 148.80s, Need: 22.03h, LR: 0.200, Acc: 72.22%
+
+[INFO] 2020-11-28 05:44:51,062: Epoch-108, T-Loss: 0.594, E-Loss: 1.175, Time: 148.72s, Need: 21.98h, LR: 0.200, Acc: 71.36%
+
+[INFO] 2020-11-28 05:47:19,903: Epoch-109, T-Loss: 0.602, E-Loss: 1.177, Time: 148.62s, Need: 21.92h, LR: 0.200, Acc: 71.02%
+
+[INFO] 2020-11-28 05:49:48,828: Epoch-110, T-Loss: 0.605, E-Loss: 1.186, Time: 148.49s, Need: 21.86h, LR: 0.200, Acc: 71.52%
+
+[INFO] 2020-11-28 05:52:17,710: Epoch-111, T-Loss: 0.600, E-Loss: 1.179, Time: 148.66s, Need: 21.84h, LR: 0.200, Acc: 71.39%
+
+[INFO] 2020-11-28 05:54:46,590: Epoch-112, T-Loss: 0.596, E-Loss: 1.232, Time: 148.64s, Need: 21.80h, LR: 0.200, Acc: 71.39%
+
+[INFO] 2020-11-28 05:57:15,818: Epoch-113, T-Loss: 0.598, E-Loss: 1.114, Time: 148.76s, Need: 21.78h, LR: 0.200, Acc: 72.94%
+
+[INFO] 2020-11-28 05:57:16,094: [  BEST  ] - A best model in epoch 113 - 72.940%
+
+[INFO] 2020-11-28 05:59:44,878: Epoch-114, T-Loss: 0.593, E-Loss: 1.233, Time: 148.78s, Need: 21.74h, LR: 0.200, Acc: 71.40%
+
+[INFO] 2020-11-28 06:02:13,915: Epoch-115, T-Loss: 0.644, E-Loss: 1.165, Time: 148.82s, Need: 21.70h, LR: 0.200, Acc: 70.84%
+
+[INFO] 2020-11-28 06:04:42,810: Epoch-116, T-Loss: 0.612, E-Loss: 1.187, Time: 148.66s, Need: 21.64h, LR: 0.200, Acc: 71.94%
+
+[INFO] 2020-11-28 06:07:11,612: Epoch-117, T-Loss: 0.597, E-Loss: 1.163, Time: 148.60s, Need: 21.59h, LR: 0.200, Acc: 71.59%
+
+[INFO] 2020-11-28 06:09:40,403: Epoch-118, T-Loss: 0.585, E-Loss: 1.161, Time: 148.56s, Need: 21.54h, LR: 0.200, Acc: 72.04%
+
+[INFO] 2020-11-28 06:12:09,351: Epoch-119, T-Loss: 0.583, E-Loss: 1.209, Time: 148.72s, Need: 21.52h, LR: 0.200, Acc: 71.83%
+
+[INFO] 2020-11-28 06:14:38,395: Epoch-120, T-Loss: 0.592, E-Loss: 1.137, Time: 148.82s, Need: 21.50h, LR: 0.200, Acc: 72.72%
+
+[INFO] 2020-11-28 06:17:07,381: Epoch-121, T-Loss: 0.583, E-Loss: 1.183, Time: 148.76s, Need: 21.45h, LR: 0.200, Acc: 72.29%
+
+[INFO] 2020-11-28 06:19:36,295: Epoch-122, T-Loss: 0.583, E-Loss: 1.172, Time: 148.69s, Need: 21.39h, LR: 0.200, Acc: 71.82%
+
+[INFO] 2020-11-28 06:22:05,398: Epoch-123, T-Loss: 0.574, E-Loss: 1.131, Time: 148.88s, Need: 21.38h, LR: 0.200, Acc: 72.71%
+
+[INFO] 2020-11-28 06:24:34,571: Epoch-124, T-Loss: 0.574, E-Loss: 1.156, Time: 148.95s, Need: 21.35h, LR: 0.200, Acc: 72.22%
+
+[INFO] 2020-11-28 06:27:03,617: Epoch-125, T-Loss: 0.583, E-Loss: 1.163, Time: 148.82s, Need: 21.29h, LR: 0.200, Acc: 72.30%
+
+[INFO] 2020-11-28 06:29:32,434: Epoch-126, T-Loss: 0.577, E-Loss: 1.120, Time: 148.59s, Need: 21.22h, LR: 0.200, Acc: 72.78%
+
+[INFO] 2020-11-28 06:32:01,339: Epoch-127, T-Loss: 0.567, E-Loss: 1.175, Time: 148.69s, Need: 21.19h, LR: 0.200, Acc: 71.97%
+
+[INFO] 2020-11-28 06:34:30,198: Epoch-128, T-Loss: 0.573, E-Loss: 1.191, Time: 148.64s, Need: 21.14h, LR: 0.200, Acc: 71.62%
+
+[INFO] 2020-11-28 06:36:59,078: Epoch-129, T-Loss: 0.574, E-Loss: 1.215, Time: 148.67s, Need: 21.10h, LR: 0.200, Acc: 71.58%
+
+[INFO] 2020-11-28 06:39:28,034: Epoch-130, T-Loss: 0.581, E-Loss: 1.151, Time: 148.75s, Need: 21.07h, LR: 0.200, Acc: 72.62%
+
+[INFO] 2020-11-28 06:41:56,878: Epoch-131, T-Loss: 0.570, E-Loss: 1.183, Time: 148.64s, Need: 21.02h, LR: 0.200, Acc: 72.50%
+
+[INFO] 2020-11-28 06:44:25,834: Epoch-132, T-Loss: 0.562, E-Loss: 1.192, Time: 148.75s, Need: 20.99h, LR: 0.200, Acc: 71.99%
+
+[INFO] 2020-11-28 06:46:54,677: Epoch-133, T-Loss: 0.573, E-Loss: 1.138, Time: 148.62s, Need: 20.93h, LR: 0.200, Acc: 72.75%
+
+[INFO] 2020-11-28 06:49:23,748: Epoch-134, T-Loss: 0.577, E-Loss: 1.143, Time: 148.58s, Need: 20.88h, LR: 0.200, Acc: 72.82%
+
+[INFO] 2020-11-28 06:51:53,108: Epoch-135, T-Loss: 0.563, E-Loss: 1.195, Time: 148.85s, Need: 20.88h, LR: 0.200, Acc: 72.06%
+
+[INFO] 2020-11-28 06:54:22,001: Epoch-136, T-Loss: 0.564, E-Loss: 1.147, Time: 148.66s, Need: 20.81h, LR: 0.200, Acc: 72.39%
+
+[INFO] 2020-11-28 06:56:50,832: Epoch-137, T-Loss: 0.572, E-Loss: 1.170, Time: 148.60s, Need: 20.76h, LR: 0.200, Acc: 71.76%
+
+[INFO] 2020-11-28 06:59:19,592: Epoch-138, T-Loss: 0.569, E-Loss: 1.138, Time: 148.53s, Need: 20.71h, LR: 0.200, Acc: 73.13%
+
+[INFO] 2020-11-28 06:59:19,870: [  BEST  ] - A best model in epoch 138 - 73.130%
+
+[INFO] 2020-11-28 07:01:48,552: Epoch-139, T-Loss: 0.565, E-Loss: 1.184, Time: 148.68s, Need: 20.69h, LR: 0.200, Acc: 72.06%
+
+[INFO] 2020-11-28 07:04:17,598: Epoch-140, T-Loss: 0.559, E-Loss: 1.193, Time: 148.82s, Need: 20.67h, LR: 0.200, Acc: 71.78%
+
+[INFO] 2020-11-28 07:06:46,444: Epoch-141, T-Loss: 0.559, E-Loss: 1.151, Time: 148.62s, Need: 20.60h, LR: 0.200, Acc: 73.01%
+
+[INFO] 2020-11-28 07:09:15,218: Epoch-142, T-Loss: 0.563, E-Loss: 1.182, Time: 148.55s, Need: 20.55h, LR: 0.200, Acc: 71.84%
+
+[INFO] 2020-11-28 07:11:44,276: Epoch-143, T-Loss: 0.551, E-Loss: 1.190, Time: 148.83s, Need: 20.55h, LR: 0.200, Acc: 72.76%
+
+[INFO] 2020-11-28 07:14:13,336: Epoch-144, T-Loss: 0.559, E-Loss: 1.176, Time: 148.84s, Need: 20.51h, LR: 0.200, Acc: 72.40%
+
+[INFO] 2020-11-28 07:16:42,239: Epoch-145, T-Loss: 0.565, E-Loss: 1.144, Time: 148.67s, Need: 20.44h, LR: 0.200, Acc: 71.63%
+
+[INFO] 2020-11-28 07:19:10,966: Epoch-146, T-Loss: 0.548, E-Loss: 1.186, Time: 148.48s, Need: 20.38h, LR: 0.200, Acc: 71.91%
+
+[INFO] 2020-11-28 07:21:39,947: Epoch-147, T-Loss: 0.560, E-Loss: 1.177, Time: 148.77s, Need: 20.37h, LR: 0.200, Acc: 71.71%
+
+[INFO] 2020-11-28 07:24:08,849: Epoch-148, T-Loss: 0.556, E-Loss: 1.153, Time: 148.68s, Need: 20.32h, LR: 0.200, Acc: 73.33%
+
+[INFO] 2020-11-28 07:24:09,121: [  BEST  ] - A best model in epoch 148 - 73.330%
+
+[INFO] 2020-11-28 07:26:37,715: Epoch-149, T-Loss: 0.554, E-Loss: 1.193, Time: 148.59s, Need: 20.27h, LR: 0.200, Acc: 72.55%
+
+[INFO] 2020-11-28 07:29:06,605: Epoch-150, T-Loss: 0.551, E-Loss: 1.142, Time: 148.68s, Need: 20.24h, LR: 0.200, Acc: 72.63%
+
+[INFO] 2020-11-28 07:31:35,451: Epoch-151, T-Loss: 0.561, E-Loss: 1.231, Time: 148.62s, Need: 20.19h, LR: 0.200, Acc: 71.46%
+
+[INFO] 2020-11-28 07:34:04,525: Epoch-152, T-Loss: 0.553, E-Loss: 1.162, Time: 148.86s, Need: 20.18h, LR: 0.200, Acc: 72.30%
+
+[INFO] 2020-11-28 07:36:33,403: Epoch-153, T-Loss: 0.562, E-Loss: 1.194, Time: 148.67s, Need: 20.11h, LR: 0.200, Acc: 72.00%
+
+[INFO] 2020-11-28 07:39:02,156: Epoch-154, T-Loss: 0.556, E-Loss: 1.153, Time: 148.53s, Need: 20.05h, LR: 0.200, Acc: 72.81%
+
+[INFO] 2020-11-28 07:41:31,058: Epoch-155, T-Loss: 0.556, E-Loss: 1.126, Time: 148.69s, Need: 20.03h, LR: 0.200, Acc: 72.78%
+
+[INFO] 2020-11-28 07:44:00,164: Epoch-156, T-Loss: 0.550, E-Loss: 1.105, Time: 148.87s, Need: 20.02h, LR: 0.200, Acc: 73.47%
+
+[INFO] 2020-11-28 07:44:00,448: [  BEST  ] - A best model in epoch 156 - 73.470%
+
+[INFO] 2020-11-28 07:46:30,886: Epoch-157, T-Loss: 0.557, E-Loss: 1.153, Time: 150.44s, Need: 20.18h, LR: 0.200, Acc: 72.49%
+
+[INFO] 2020-11-28 07:48:59,686: Epoch-158, T-Loss: 0.548, E-Loss: 1.236, Time: 148.58s, Need: 19.89h, LR: 0.200, Acc: 71.84%
+
+[INFO] 2020-11-28 07:51:28,618: Epoch-159, T-Loss: 0.552, E-Loss: 1.132, Time: 148.72s, Need: 19.87h, LR: 0.200, Acc: 72.94%
+
+[INFO] 2020-11-28 07:53:57,585: Epoch-160, T-Loss: 0.545, E-Loss: 1.182, Time: 148.72s, Need: 19.83h, LR: 0.200, Acc: 71.52%
+
+[INFO] 2020-11-28 07:56:26,453: Epoch-161, T-Loss: 0.552, E-Loss: 1.120, Time: 148.64s, Need: 19.78h, LR: 0.200, Acc: 73.15%
+
+[INFO] 2020-11-28 07:58:55,802: Epoch-162, T-Loss: 0.541, E-Loss: 1.209, Time: 148.80s, Need: 19.76h, LR: 0.200, Acc: 72.03%
+
+[INFO] 2020-11-28 08:01:24,872: Epoch-163, T-Loss: 0.548, E-Loss: 1.182, Time: 148.84s, Need: 19.72h, LR: 0.200, Acc: 72.55%
+
+[INFO] 2020-11-28 08:03:53,807: Epoch-164, T-Loss: 0.538, E-Loss: 1.174, Time: 148.70s, Need: 19.66h, LR: 0.200, Acc: 72.77%
+
+[INFO] 2020-11-28 08:06:22,660: Epoch-165, T-Loss: 0.545, E-Loss: 1.237, Time: 148.64s, Need: 19.61h, LR: 0.200, Acc: 72.02%
+
+[INFO] 2020-11-28 08:08:51,543: Epoch-166, T-Loss: 0.547, E-Loss: 1.119, Time: 148.66s, Need: 19.57h, LR: 0.200, Acc: 73.05%
+
+[INFO] 2020-11-28 08:11:20,450: Epoch-167, T-Loss: 0.542, E-Loss: 1.225, Time: 148.68s, Need: 19.53h, LR: 0.200, Acc: 71.07%
+
+[INFO] 2020-11-28 08:13:49,375: Epoch-168, T-Loss: 0.548, E-Loss: 1.162, Time: 148.70s, Need: 19.50h, LR: 0.200, Acc: 72.85%
+
+[INFO] 2020-11-28 08:16:18,242: Epoch-169, T-Loss: 0.532, E-Loss: 1.145, Time: 148.65s, Need: 19.45h, LR: 0.200, Acc: 73.50%
+
+[INFO] 2020-11-28 08:16:18,525: [  BEST  ] - A best model in epoch 169 - 73.500%
+
+[INFO] 2020-11-28 08:18:47,099: Epoch-170, T-Loss: 0.541, E-Loss: 1.167, Time: 148.57s, Need: 19.40h, LR: 0.200, Acc: 72.86%
+
+[INFO] 2020-11-28 08:21:16,029: Epoch-171, T-Loss: 0.541, E-Loss: 1.164, Time: 148.70s, Need: 19.37h, LR: 0.200, Acc: 72.38%
+
+[INFO] 2020-11-28 08:23:44,978: Epoch-172, T-Loss: 0.543, E-Loss: 1.218, Time: 148.71s, Need: 19.33h, LR: 0.200, Acc: 71.61%
+
+[INFO] 2020-11-28 08:26:13,860: Epoch-173, T-Loss: 0.547, E-Loss: 1.191, Time: 148.66s, Need: 19.29h, LR: 0.200, Acc: 72.68%
+
+[INFO] 2020-11-28 08:28:42,649: Epoch-174, T-Loss: 0.546, E-Loss: 1.182, Time: 148.57s, Need: 19.23h, LR: 0.200, Acc: 72.48%
+
+[INFO] 2020-11-28 08:31:11,685: Epoch-175, T-Loss: 0.530, E-Loss: 1.117, Time: 148.82s, Need: 19.22h, LR: 0.200, Acc: 73.27%
+
+[INFO] 2020-11-28 08:33:40,756: Epoch-176, T-Loss: 0.543, E-Loss: 1.128, Time: 148.84s, Need: 19.18h, LR: 0.200, Acc: 73.49%
+
+[INFO] 2020-11-28 08:36:09,807: Epoch-177, T-Loss: 0.535, E-Loss: 1.197, Time: 148.82s, Need: 19.14h, LR: 0.200, Acc: 72.28%
+
+[INFO] 2020-11-28 08:38:38,593: Epoch-178, T-Loss: 0.533, E-Loss: 1.182, Time: 148.56s, Need: 19.06h, LR: 0.200, Acc: 72.15%
+
+[INFO] 2020-11-28 08:41:07,503: Epoch-179, T-Loss: 0.544, E-Loss: 1.140, Time: 148.68s, Need: 19.04h, LR: 0.200, Acc: 73.56%
+
+[INFO] 2020-11-28 08:41:07,791: [  BEST  ] - A best model in epoch 179 - 73.560%
+
+[INFO] 2020-11-28 08:43:36,640: Epoch-180, T-Loss: 0.536, E-Loss: 1.196, Time: 148.85s, Need: 19.02h, LR: 0.200, Acc: 72.16%
+
+[INFO] 2020-11-28 08:46:05,474: Epoch-181, T-Loss: 0.536, E-Loss: 1.162, Time: 148.62s, Need: 18.95h, LR: 0.200, Acc: 72.91%
+
+[INFO] 2020-11-28 08:48:34,323: Epoch-182, T-Loss: 0.540, E-Loss: 1.196, Time: 148.62s, Need: 18.91h, LR: 0.200, Acc: 72.49%
+
+[INFO] 2020-11-28 08:51:03,290: Epoch-183, T-Loss: 0.537, E-Loss: 1.140, Time: 148.73s, Need: 18.88h, LR: 0.200, Acc: 72.82%
+
+[INFO] 2020-11-28 08:53:32,216: Epoch-184, T-Loss: 0.537, E-Loss: 1.209, Time: 148.71s, Need: 18.84h, LR: 0.200, Acc: 72.68%
+
+[INFO] 2020-11-28 08:56:01,128: Epoch-185, T-Loss: 0.553, E-Loss: 1.115, Time: 148.68s, Need: 18.79h, LR: 0.200, Acc: 72.93%
+
+[INFO] 2020-11-28 08:58:29,959: Epoch-186, T-Loss: 0.534, E-Loss: 1.122, Time: 148.60s, Need: 18.74h, LR: 0.200, Acc: 73.89%
+
+[INFO] 2020-11-28 08:58:30,238: [  BEST  ] - A best model in epoch 186 - 73.890%
+
+[INFO] 2020-11-28 09:00:58,907: Epoch-187, T-Loss: 0.529, E-Loss: 1.125, Time: 148.67s, Need: 18.71h, LR: 0.200, Acc: 73.40%
+
+[INFO] 2020-11-28 09:03:27,988: Epoch-188, T-Loss: 0.526, E-Loss: 1.165, Time: 148.86s, Need: 18.69h, LR: 0.200, Acc: 72.49%
+
+[INFO] 2020-11-28 09:05:57,027: Epoch-189, T-Loss: 0.527, E-Loss: 1.235, Time: 148.81s, Need: 18.64h, LR: 0.200, Acc: 71.84%
+
+[INFO] 2020-11-28 09:08:25,871: Epoch-190, T-Loss: 0.539, E-Loss: 1.129, Time: 148.62s, Need: 18.58h, LR: 0.200, Acc: 73.16%
+
+[INFO] 2020-11-28 09:10:54,991: Epoch-191, T-Loss: 0.525, E-Loss: 1.166, Time: 148.89s, Need: 18.57h, LR: 0.200, Acc: 72.92%
+
+[INFO] 2020-11-28 09:13:23,920: Epoch-192, T-Loss: 0.519, E-Loss: 1.169, Time: 148.71s, Need: 18.51h, LR: 0.200, Acc: 72.68%
+
+[INFO] 2020-11-28 09:15:52,781: Epoch-193, T-Loss: 0.520, E-Loss: 1.212, Time: 148.63s, Need: 18.45h, LR: 0.200, Acc: 72.27%
+
+[INFO] 2020-11-28 09:18:21,794: Epoch-194, T-Loss: 0.544, E-Loss: 1.183, Time: 148.79s, Need: 18.43h, LR: 0.200, Acc: 72.74%
+
+[INFO] 2020-11-28 09:20:51,085: Epoch-195, T-Loss: 0.535, E-Loss: 1.195, Time: 148.65s, Need: 18.38h, LR: 0.200, Acc: 72.81%
+
+[INFO] 2020-11-28 09:23:20,117: Epoch-196, T-Loss: 0.538, E-Loss: 1.126, Time: 148.80s, Need: 18.35h, LR: 0.200, Acc: 72.97%
+
+[INFO] 2020-11-28 09:25:49,033: Epoch-197, T-Loss: 0.533, E-Loss: 1.200, Time: 148.69s, Need: 18.30h, LR: 0.200, Acc: 71.60%
+
+[INFO] 2020-11-28 09:28:17,848: Epoch-198, T-Loss: 0.527, E-Loss: 1.118, Time: 148.58s, Need: 18.24h, LR: 0.200, Acc: 73.14%
+
+[INFO] 2020-11-28 09:30:46,957: Epoch-199, T-Loss: 0.527, E-Loss: 1.202, Time: 148.88s, Need: 18.24h, LR: 0.200, Acc: 71.84%
+
+[INFO] 2020-11-28 09:33:16,077: Epoch-200, T-Loss: 0.531, E-Loss: 1.172, Time: 148.88s, Need: 18.20h, LR: 0.200, Acc: 73.05%
+
+[INFO] 2020-11-28 09:35:44,936: Epoch-201, T-Loss: 0.532, E-Loss: 1.147, Time: 148.63s, Need: 18.12h, LR: 0.200, Acc: 73.05%
+
+[INFO] 2020-11-28 09:38:13,788: Epoch-202, T-Loss: 0.528, E-Loss: 1.151, Time: 148.62s, Need: 18.08h, LR: 0.200, Acc: 73.19%
+
+[INFO] 2020-11-28 09:40:42,753: Epoch-203, T-Loss: 0.522, E-Loss: 1.115, Time: 148.73s, Need: 18.05h, LR: 0.200, Acc: 73.72%
+
+[INFO] 2020-11-28 09:43:11,706: Epoch-204, T-Loss: 0.533, E-Loss: 1.180, Time: 148.73s, Need: 18.01h, LR: 0.200, Acc: 71.98%
+
+[INFO] 2020-11-28 09:45:40,751: Epoch-205, T-Loss: 0.525, E-Loss: 1.205, Time: 148.81s, Need: 17.98h, LR: 0.200, Acc: 72.31%
+
+[INFO] 2020-11-28 09:48:09,827: Epoch-206, T-Loss: 0.535, E-Loss: 1.193, Time: 148.57s, Need: 17.91h, LR: 0.200, Acc: 71.68%
+
+[INFO] 2020-11-28 09:50:38,696: Epoch-207, T-Loss: 0.530, E-Loss: 1.169, Time: 148.65s, Need: 17.88h, LR: 0.200, Acc: 72.83%
+
+[INFO] 2020-11-28 09:53:07,654: Epoch-208, T-Loss: 0.534, E-Loss: 1.138, Time: 148.75s, Need: 17.85h, LR: 0.200, Acc: 73.25%
+
+[INFO] 2020-11-28 09:55:36,596: Epoch-209, T-Loss: 0.521, E-Loss: 1.154, Time: 148.71s, Need: 17.80h, LR: 0.200, Acc: 73.17%
+
+[INFO] 2020-11-28 09:58:05,519: Epoch-210, T-Loss: 0.523, E-Loss: 1.175, Time: 148.71s, Need: 17.76h, LR: 0.200, Acc: 72.30%
+
+[INFO] 2020-11-28 10:00:34,582: Epoch-211, T-Loss: 0.531, E-Loss: 1.145, Time: 148.84s, Need: 17.74h, LR: 0.200, Acc: 72.69%
+
+[INFO] 2020-11-28 10:03:03,669: Epoch-212, T-Loss: 0.518, E-Loss: 1.235, Time: 148.86s, Need: 17.70h, LR: 0.200, Acc: 71.54%
+
+[INFO] 2020-11-28 10:05:32,585: Epoch-213, T-Loss: 0.527, E-Loss: 1.157, Time: 148.71s, Need: 17.64h, LR: 0.200, Acc: 72.95%
+
+[INFO] 2020-11-28 10:08:01,496: Epoch-214, T-Loss: 0.514, E-Loss: 1.137, Time: 148.70s, Need: 17.60h, LR: 0.200, Acc: 72.79%
+
+[INFO] 2020-11-28 10:10:30,364: Epoch-215, T-Loss: 0.527, E-Loss: 1.147, Time: 148.66s, Need: 17.55h, LR: 0.200, Acc: 73.47%
+
+[INFO] 2020-11-28 10:12:59,377: Epoch-216, T-Loss: 0.530, E-Loss: 1.184, Time: 148.79s, Need: 17.52h, LR: 0.200, Acc: 72.89%
+
+[INFO] 2020-11-28 10:15:28,476: Epoch-217, T-Loss: 0.516, E-Loss: 1.161, Time: 148.87s, Need: 17.49h, LR: 0.200, Acc: 72.79%
+
+[INFO] 2020-11-28 10:17:57,323: Epoch-218, T-Loss: 0.519, E-Loss: 1.168, Time: 148.62s, Need: 17.42h, LR: 0.200, Acc: 73.58%
+
+[INFO] 2020-11-28 10:20:26,622: Epoch-219, T-Loss: 0.527, E-Loss: 1.220, Time: 148.85s, Need: 17.41h, LR: 0.200, Acc: 71.93%
+
+[INFO] 2020-11-28 10:22:55,791: Epoch-220, T-Loss: 0.520, E-Loss: 1.137, Time: 148.95s, Need: 17.38h, LR: 0.200, Acc: 72.94%
+
+[INFO] 2020-11-28 10:25:24,702: Epoch-221, T-Loss: 0.532, E-Loss: 1.169, Time: 148.69s, Need: 17.31h, LR: 0.200, Acc: 72.44%
+
+[INFO] 2020-11-28 10:27:53,540: Epoch-222, T-Loss: 0.528, E-Loss: 1.165, Time: 148.61s, Need: 17.26h, LR: 0.200, Acc: 72.73%
+
+[INFO] 2020-11-28 10:30:22,441: Epoch-223, T-Loss: 0.521, E-Loss: 1.183, Time: 148.69s, Need: 17.22h, LR: 0.200, Acc: 73.33%
+
+[INFO] 2020-11-28 10:32:51,408: Epoch-224, T-Loss: 0.510, E-Loss: 1.185, Time: 148.75s, Need: 17.19h, LR: 0.200, Acc: 72.52%
+
+[INFO] 2020-11-28 10:35:20,320: Epoch-225, T-Loss: 0.526, E-Loss: 1.196, Time: 148.70s, Need: 17.14h, LR: 0.200, Acc: 72.52%
+
+[INFO] 2020-11-28 10:37:49,182: Epoch-226, T-Loss: 0.522, E-Loss: 1.215, Time: 148.64s, Need: 17.09h, LR: 0.200, Acc: 71.91%
+
+[INFO] 2020-11-28 10:40:18,169: Epoch-227, T-Loss: 0.507, E-Loss: 1.136, Time: 148.77s, Need: 17.07h, LR: 0.200, Acc: 73.45%
+
+[INFO] 2020-11-28 10:42:47,215: Epoch-228, T-Loss: 0.520, E-Loss: 1.243, Time: 148.82s, Need: 17.03h, LR: 0.200, Acc: 72.83%
+
+[INFO] 2020-11-28 10:45:16,236: Epoch-229, T-Loss: 0.525, E-Loss: 1.206, Time: 148.79s, Need: 16.99h, LR: 0.200, Acc: 72.22%
+
+[INFO] 2020-11-28 10:47:45,089: Epoch-230, T-Loss: 0.516, E-Loss: 1.175, Time: 148.63s, Need: 16.93h, LR: 0.200, Acc: 72.90%
+
+[INFO] 2020-11-28 10:50:14,068: Epoch-231, T-Loss: 0.512, E-Loss: 1.201, Time: 148.75s, Need: 16.90h, LR: 0.200, Acc: 72.95%
+
+[INFO] 2020-11-28 10:52:43,134: Epoch-232, T-Loss: 0.516, E-Loss: 1.181, Time: 148.83s, Need: 16.87h, LR: 0.200, Acc: 72.71%
+
+[INFO] 2020-11-28 10:55:12,060: Epoch-233, T-Loss: 0.523, E-Loss: 1.178, Time: 148.70s, Need: 16.81h, LR: 0.200, Acc: 71.92%
+
+[INFO] 2020-11-28 10:57:40,975: Epoch-234, T-Loss: 0.524, E-Loss: 1.137, Time: 148.69s, Need: 16.77h, LR: 0.200, Acc: 73.49%
+
+[INFO] 2020-11-28 11:00:09,939: Epoch-235, T-Loss: 0.515, E-Loss: 1.117, Time: 148.73s, Need: 16.73h, LR: 0.200, Acc: 73.44%
+
+[INFO] 2020-11-28 11:02:39,057: Epoch-236, T-Loss: 0.519, E-Loss: 1.202, Time: 148.90s, Need: 16.71h, LR: 0.200, Acc: 72.25%
+
+[INFO] 2020-11-28 11:05:08,087: Epoch-237, T-Loss: 0.518, E-Loss: 1.139, Time: 148.81s, Need: 16.66h, LR: 0.200, Acc: 73.27%
+
+[INFO] 2020-11-28 11:07:37,507: Epoch-238, T-Loss: 0.516, E-Loss: 1.191, Time: 148.71s, Need: 16.61h, LR: 0.200, Acc: 73.12%
+
+[INFO] 2020-11-28 11:10:06,499: Epoch-239, T-Loss: 0.508, E-Loss: 1.138, Time: 148.76s, Need: 16.57h, LR: 0.200, Acc: 73.53%
+
+[INFO] 2020-11-28 11:12:35,688: Epoch-240, T-Loss: 0.516, E-Loss: 1.206, Time: 148.95s, Need: 16.55h, LR: 0.200, Acc: 72.66%
+
+[INFO] 2020-11-28 11:15:04,716: Epoch-241, T-Loss: 0.524, E-Loss: 1.133, Time: 148.80s, Need: 16.49h, LR: 0.200, Acc: 73.91%
+
+[INFO] 2020-11-28 11:15:05,001: [  BEST  ] - A best model in epoch 241 - 73.910%
+
+[INFO] 2020-11-28 11:17:33,852: Epoch-242, T-Loss: 0.526, E-Loss: 1.182, Time: 148.85s, Need: 16.46h, LR: 0.200, Acc: 72.70%
+
+[INFO] 2020-11-28 11:20:02,828: Epoch-243, T-Loss: 0.508, E-Loss: 1.193, Time: 148.75s, Need: 16.40h, LR: 0.200, Acc: 71.91%
+
+[INFO] 2020-11-28 11:22:31,830: Epoch-244, T-Loss: 0.514, E-Loss: 1.143, Time: 148.78s, Need: 16.37h, LR: 0.200, Acc: 73.06%
+
+[INFO] 2020-11-28 11:25:00,865: Epoch-245, T-Loss: 0.503, E-Loss: 1.142, Time: 148.80s, Need: 16.33h, LR: 0.200, Acc: 73.62%
+
+[INFO] 2020-11-28 11:27:29,768: Epoch-246, T-Loss: 0.509, E-Loss: 1.166, Time: 148.67s, Need: 16.27h, LR: 0.200, Acc: 73.56%
+
+[INFO] 2020-11-28 11:29:58,819: Epoch-247, T-Loss: 0.519, E-Loss: 1.134, Time: 148.81s, Need: 16.25h, LR: 0.200, Acc: 73.49%
+
+[INFO] 2020-11-28 11:32:27,847: Epoch-248, T-Loss: 0.509, E-Loss: 1.243, Time: 148.81s, Need: 16.20h, LR: 0.200, Acc: 72.35%
+
+[INFO] 2020-11-28 11:34:56,832: Epoch-249, T-Loss: 0.521, E-Loss: 1.170, Time: 148.74s, Need: 16.16h, LR: 0.200, Acc: 72.53%
+
+[INFO] 2020-11-28 11:37:25,756: Epoch-250, T-Loss: 0.504, E-Loss: 1.150, Time: 148.70s, Need: 16.11h, LR: 0.200, Acc: 72.66%
+
+[INFO] 2020-11-28 11:39:54,932: Epoch-251, T-Loss: 0.516, E-Loss: 1.170, Time: 148.95s, Need: 16.10h, LR: 0.200, Acc: 73.04%
+
+[INFO] 2020-11-28 11:42:23,951: Epoch-252, T-Loss: 0.517, E-Loss: 1.107, Time: 148.79s, Need: 16.04h, LR: 0.200, Acc: 73.88%
+
+[INFO] 2020-11-28 11:44:52,918: Epoch-253, T-Loss: 0.508, E-Loss: 1.203, Time: 148.73s, Need: 15.99h, LR: 0.200, Acc: 72.93%
+
+[INFO] 2020-11-28 11:47:21,837: Epoch-254, T-Loss: 0.523, E-Loss: 1.264, Time: 148.69s, Need: 15.94h, LR: 0.200, Acc: 71.64%
+
+[INFO] 2020-11-28 11:49:50,858: Epoch-255, T-Loss: 0.522, E-Loss: 1.216, Time: 148.79s, Need: 15.91h, LR: 0.200, Acc: 72.36%
+
+[INFO] 2020-11-28 11:52:19,954: Epoch-256, T-Loss: 0.514, E-Loss: 1.223, Time: 148.86s, Need: 15.88h, LR: 0.200, Acc: 71.80%
+
+[INFO] 2020-11-28 11:54:48,973: Epoch-257, T-Loss: 0.506, E-Loss: 1.185, Time: 148.80s, Need: 15.83h, LR: 0.200, Acc: 72.72%
+
+[INFO] 2020-11-28 11:57:18,012: Epoch-258, T-Loss: 0.511, E-Loss: 1.169, Time: 148.81s, Need: 15.79h, LR: 0.200, Acc: 72.26%
+
+[INFO] 2020-11-28 11:59:47,086: Epoch-259, T-Loss: 0.507, E-Loss: 1.173, Time: 148.84s, Need: 15.75h, LR: 0.200, Acc: 73.17%
+
+[INFO] 2020-11-28 12:02:16,175: Epoch-260, T-Loss: 0.512, E-Loss: 1.173, Time: 148.83s, Need: 15.71h, LR: 0.200, Acc: 72.93%
+
+[INFO] 2020-11-28 12:04:45,203: Epoch-261, T-Loss: 0.507, E-Loss: 1.179, Time: 148.79s, Need: 15.66h, LR: 0.200, Acc: 72.93%
+
+[INFO] 2020-11-28 12:07:14,142: Epoch-262, T-Loss: 0.521, E-Loss: 1.157, Time: 148.70s, Need: 15.61h, LR: 0.200, Acc: 72.43%
+
+[INFO] 2020-11-28 12:09:43,310: Epoch-263, T-Loss: 0.513, E-Loss: 1.169, Time: 148.93s, Need: 15.60h, LR: 0.200, Acc: 72.83%
+
+[INFO] 2020-11-28 12:12:12,486: Epoch-264, T-Loss: 0.509, E-Loss: 1.156, Time: 148.95s, Need: 15.56h, LR: 0.200, Acc: 72.79%
+
+[INFO] 2020-11-28 12:14:41,455: Epoch-265, T-Loss: 0.506, E-Loss: 1.182, Time: 148.73s, Need: 15.49h, LR: 0.200, Acc: 72.93%
+
+[INFO] 2020-11-28 12:17:10,400: Epoch-266, T-Loss: 0.510, E-Loss: 1.248, Time: 148.72s, Need: 15.45h, LR: 0.200, Acc: 71.86%
+
+[INFO] 2020-11-28 12:19:39,584: Epoch-267, T-Loss: 0.509, E-Loss: 1.186, Time: 148.96s, Need: 15.43h, LR: 0.200, Acc: 73.08%
+
+[INFO] 2020-11-28 12:22:08,729: Epoch-268, T-Loss: 0.512, E-Loss: 1.122, Time: 148.91s, Need: 15.39h, LR: 0.200, Acc: 73.41%
+
+[INFO] 2020-11-28 12:24:37,860: Epoch-269, T-Loss: 0.523, E-Loss: 1.149, Time: 148.89s, Need: 15.34h, LR: 0.200, Acc: 73.01%
+
+[INFO] 2020-11-28 12:27:06,728: Epoch-270, T-Loss: 0.509, E-Loss: 1.148, Time: 148.64s, Need: 15.28h, LR: 0.200, Acc: 73.76%
+
+[INFO] 2020-11-28 12:29:35,730: Epoch-271, T-Loss: 0.508, E-Loss: 1.147, Time: 148.76s, Need: 15.25h, LR: 0.200, Acc: 73.37%
+
+[INFO] 2020-11-28 12:32:04,812: Epoch-272, T-Loss: 0.509, E-Loss: 1.244, Time: 148.86s, Need: 15.22h, LR: 0.200, Acc: 71.76%
+
+[INFO] 2020-11-28 12:34:33,815: Epoch-273, T-Loss: 0.513, E-Loss: 1.190, Time: 148.78s, Need: 15.17h, LR: 0.200, Acc: 73.19%
+
+[INFO] 2020-11-28 12:37:02,733: Epoch-274, T-Loss: 0.511, E-Loss: 1.125, Time: 148.68s, Need: 15.12h, LR: 0.200, Acc: 73.66%
+
+[INFO] 2020-11-28 12:39:32,183: Epoch-275, T-Loss: 0.511, E-Loss: 1.131, Time: 148.94s, Need: 15.10h, LR: 0.200, Acc: 73.73%
+
+[INFO] 2020-11-28 12:42:01,383: Epoch-276, T-Loss: 0.517, E-Loss: 1.146, Time: 148.98s, Need: 15.06h, LR: 0.200, Acc: 73.06%
+
+[INFO] 2020-11-28 12:44:31,107: Epoch-277, T-Loss: 0.501, E-Loss: 1.149, Time: 149.48s, Need: 15.07h, LR: 0.200, Acc: 73.58%
+
+[INFO] 2020-11-28 12:47:01,231: Epoch-278, T-Loss: 0.511, E-Loss: 1.133, Time: 149.90s, Need: 15.07h, LR: 0.200, Acc: 73.57%
+
+[INFO] 2020-11-28 12:49:31,475: Epoch-279, T-Loss: 0.505, E-Loss: 1.149, Time: 150.01s, Need: 15.04h, LR: 0.200, Acc: 73.10%
+
+[INFO] 2020-11-28 12:52:01,747: Epoch-280, T-Loss: 0.490, E-Loss: 1.184, Time: 150.03s, Need: 15.00h, LR: 0.200, Acc: 73.39%
+
+[INFO] 2020-11-28 12:54:31,925: Epoch-281, T-Loss: 0.518, E-Loss: 1.154, Time: 149.94s, Need: 14.95h, LR: 0.200, Acc: 72.89%
+
+[INFO] 2020-11-28 12:57:02,145: Epoch-282, T-Loss: 0.516, E-Loss: 1.119, Time: 150.00s, Need: 14.92h, LR: 0.200, Acc: 73.87%
+
+[INFO] 2020-11-28 12:59:32,384: Epoch-283, T-Loss: 0.518, E-Loss: 1.085, Time: 150.02s, Need: 14.88h, LR: 0.200, Acc: 73.98%
+
+[INFO] 2020-11-28 12:59:32,904: [  BEST  ] - A best model in epoch 283 - 73.980%
+
+[INFO] 2020-11-28 13:02:02,813: Epoch-284, T-Loss: 0.501, E-Loss: 1.138, Time: 149.91s, Need: 14.82h, LR: 0.200, Acc: 73.98%
+
+[INFO] 2020-11-28 13:04:33,001: Epoch-285, T-Loss: 0.501, E-Loss: 1.214, Time: 149.95s, Need: 14.79h, LR: 0.200, Acc: 72.21%
+
+[INFO] 2020-11-28 13:07:03,152: Epoch-286, T-Loss: 0.501, E-Loss: 1.182, Time: 149.91s, Need: 14.74h, LR: 0.200, Acc: 72.80%
+
+[INFO] 2020-11-28 13:09:33,950: Epoch-287, T-Loss: 0.511, E-Loss: 1.210, Time: 149.93s, Need: 14.70h, LR: 0.200, Acc: 72.14%
+
+[INFO] 2020-11-28 13:12:04,166: Epoch-288, T-Loss: 0.519, E-Loss: 1.230, Time: 149.97s, Need: 14.66h, LR: 0.200, Acc: 72.69%
+
+[INFO] 2020-11-28 13:14:34,393: Epoch-289, T-Loss: 0.510, E-Loss: 1.155, Time: 149.99s, Need: 14.62h, LR: 0.200, Acc: 72.51%
+
+[INFO] 2020-11-28 13:17:04,486: Epoch-290, T-Loss: 0.506, E-Loss: 1.096, Time: 149.85s, Need: 14.57h, LR: 0.200, Acc: 73.80%
+
+[INFO] 2020-11-28 13:19:34,703: Epoch-291, T-Loss: 0.504, E-Loss: 1.120, Time: 149.98s, Need: 14.54h, LR: 0.200, Acc: 73.88%
+
+[INFO] 2020-11-28 13:22:05,216: Epoch-292, T-Loss: 0.492, E-Loss: 1.071, Time: 150.04s, Need: 14.50h, LR: 0.200, Acc: 73.43%
+
+[INFO] 2020-11-28 13:24:35,582: Epoch-293, T-Loss: 0.490, E-Loss: 1.200, Time: 150.10s, Need: 14.47h, LR: 0.200, Acc: 72.04%
+
+[INFO] 2020-11-28 13:27:05,990: Epoch-294, T-Loss: 0.513, E-Loss: 1.202, Time: 150.17s, Need: 14.43h, LR: 0.200, Acc: 72.70%
+
+[INFO] 2020-11-28 13:29:36,397: Epoch-295, T-Loss: 0.507, E-Loss: 1.129, Time: 150.17s, Need: 14.39h, LR: 0.200, Acc: 73.31%
+
+[INFO] 2020-11-28 13:32:06,983: Epoch-296, T-Loss: 0.499, E-Loss: 1.183, Time: 150.35s, Need: 14.37h, LR: 0.200, Acc: 73.11%
+
+[INFO] 2020-11-28 13:34:37,382: Epoch-297, T-Loss: 0.499, E-Loss: 1.258, Time: 150.16s, Need: 14.31h, LR: 0.200, Acc: 71.75%
+
+[INFO] 2020-11-28 13:37:07,626: Epoch-298, T-Loss: 0.504, E-Loss: 1.204, Time: 150.01s, Need: 14.25h, LR: 0.200, Acc: 72.68%
+
+[INFO] 2020-11-28 13:39:38,253: Epoch-299, T-Loss: 0.504, E-Loss: 1.191, Time: 150.38s, Need: 14.24h, LR: 0.020, Acc: 72.96%
+
+[INFO] 2020-11-28 13:42:08,665: Epoch-300, T-Loss: 0.327, E-Loss: 0.919, Time: 150.17s, Need: 14.18h, LR: 0.020, Acc: 77.93%
+
+[INFO] 2020-11-28 13:42:08,966: [  BEST  ] - A best model in epoch 300 - 77.930%
+
+[INFO] 2020-11-28 13:44:39,113: Epoch-301, T-Loss: 0.258, E-Loss: 0.897, Time: 150.14s, Need: 14.14h, LR: 0.020, Acc: 78.95%
+
+[INFO] 2020-11-28 13:44:39,417: [  BEST  ] - A best model in epoch 301 - 78.950%
+
+[INFO] 2020-11-28 13:47:09,453: Epoch-302, T-Loss: 0.233, E-Loss: 0.895, Time: 150.03s, Need: 14.09h, LR: 0.020, Acc: 79.06%
+
+[INFO] 2020-11-28 13:47:09,744: [  BEST  ] - A best model in epoch 302 - 79.060%
+
+[INFO] 2020-11-28 13:49:39,986: Epoch-303, T-Loss: 0.219, E-Loss: 0.902, Time: 150.24s, Need: 14.06h, LR: 0.020, Acc: 79.16%
+
+[INFO] 2020-11-28 13:49:40,302: [  BEST  ] - A best model in epoch 303 - 79.160%
+
+[INFO] 2020-11-28 13:52:10,551: Epoch-304, T-Loss: 0.207, E-Loss: 0.893, Time: 150.25s, Need: 14.02h, LR: 0.020, Acc: 79.58%
+
+[INFO] 2020-11-28 13:52:10,840: [  BEST  ] - A best model in epoch 304 - 79.580%
+
+[INFO] 2020-11-28 13:54:40,913: Epoch-305, T-Loss: 0.204, E-Loss: 0.891, Time: 150.07s, Need: 13.96h, LR: 0.020, Acc: 79.75%
+
+[INFO] 2020-11-28 13:54:41,227: [  BEST  ] - A best model in epoch 305 - 79.750%
+
+[INFO] 2020-11-28 13:57:11,272: Epoch-306, T-Loss: 0.193, E-Loss: 0.886, Time: 150.04s, Need: 13.92h, LR: 0.020, Acc: 79.70%
+
+[INFO] 2020-11-28 13:59:41,914: Epoch-307, T-Loss: 0.188, E-Loss: 0.892, Time: 150.29s, Need: 13.90h, LR: 0.020, Acc: 79.55%
+
+[INFO] 2020-11-28 14:02:12,364: Epoch-308, T-Loss: 0.185, E-Loss: 0.883, Time: 150.21s, Need: 13.85h, LR: 0.020, Acc: 79.88%
+
+[INFO] 2020-11-28 14:02:12,657: [  BEST  ] - A best model in epoch 308 - 79.880%
+
+[INFO] 2020-11-28 14:04:42,901: Epoch-309, T-Loss: 0.182, E-Loss: 0.878, Time: 150.24s, Need: 13.81h, LR: 0.020, Acc: 80.10%
+
+[INFO] 2020-11-28 14:04:43,209: [  BEST  ] - A best model in epoch 309 - 80.100%
+
+[INFO] 2020-11-28 14:07:13,352: Epoch-310, T-Loss: 0.177, E-Loss: 0.868, Time: 150.14s, Need: 13.76h, LR: 0.020, Acc: 80.08%
+
+[INFO] 2020-11-28 14:09:43,739: Epoch-311, T-Loss: 0.175, E-Loss: 0.878, Time: 150.14s, Need: 13.72h, LR: 0.020, Acc: 80.06%
+
+[INFO] 2020-11-28 14:12:14,176: Epoch-312, T-Loss: 0.168, E-Loss: 0.872, Time: 150.20s, Need: 13.69h, LR: 0.020, Acc: 79.93%
+
+[INFO] 2020-11-28 14:14:44,470: Epoch-313, T-Loss: 0.164, E-Loss: 0.863, Time: 150.03s, Need: 13.63h, LR: 0.020, Acc: 80.30%
+
+[INFO] 2020-11-28 14:14:44,783: [  BEST  ] - A best model in epoch 313 - 80.300%
+
+[INFO] 2020-11-28 14:17:14,911: Epoch-314, T-Loss: 0.163, E-Loss: 0.860, Time: 150.13s, Need: 13.59h, LR: 0.020, Acc: 80.24%
+
+[INFO] 2020-11-28 14:19:45,291: Epoch-315, T-Loss: 0.165, E-Loss: 0.861, Time: 150.15s, Need: 13.56h, LR: 0.020, Acc: 80.08%
+
+[INFO] 2020-11-28 14:22:15,661: Epoch-316, T-Loss: 0.165, E-Loss: 0.859, Time: 150.13s, Need: 13.51h, LR: 0.020, Acc: 80.35%
+
+[INFO] 2020-11-28 14:22:15,966: [  BEST  ] - A best model in epoch 316 - 80.350%
+
+[INFO] 2020-11-28 14:24:46,124: Epoch-317, T-Loss: 0.161, E-Loss: 0.860, Time: 150.16s, Need: 13.47h, LR: 0.020, Acc: 80.38%
+
+[INFO] 2020-11-28 14:24:46,412: [  BEST  ] - A best model in epoch 317 - 80.380%
+
+[INFO] 2020-11-28 14:27:16,372: Epoch-318, T-Loss: 0.158, E-Loss: 0.864, Time: 149.96s, Need: 13.41h, LR: 0.020, Acc: 79.83%
+
+[INFO] 2020-11-28 14:29:46,686: Epoch-319, T-Loss: 0.154, E-Loss: 0.856, Time: 150.07s, Need: 13.38h, LR: 0.020, Acc: 80.17%
+
+[INFO] 2020-11-28 14:32:17,126: Epoch-320, T-Loss: 0.153, E-Loss: 0.850, Time: 150.19s, Need: 13.35h, LR: 0.020, Acc: 80.01%
+
+[INFO] 2020-11-28 14:34:47,483: Epoch-321, T-Loss: 0.149, E-Loss: 0.851, Time: 150.12s, Need: 13.30h, LR: 0.020, Acc: 80.31%
+
+[INFO] 2020-11-28 14:37:17,840: Epoch-322, T-Loss: 0.152, E-Loss: 0.859, Time: 150.11s, Need: 13.26h, LR: 0.020, Acc: 80.13%
+
+[INFO] 2020-11-28 14:39:48,365: Epoch-323, T-Loss: 0.153, E-Loss: 0.851, Time: 150.27s, Need: 13.23h, LR: 0.020, Acc: 80.19%
+
+[INFO] 2020-11-28 14:42:18,887: Epoch-324, T-Loss: 0.146, E-Loss: 0.848, Time: 150.27s, Need: 13.19h, LR: 0.020, Acc: 80.41%
+
+[INFO] 2020-11-28 14:42:19,195: [  BEST  ] - A best model in epoch 324 - 80.410%
+
+[INFO] 2020-11-28 14:44:49,366: Epoch-325, T-Loss: 0.149, E-Loss: 0.855, Time: 150.17s, Need: 13.14h, LR: 0.020, Acc: 80.00%
+
+[INFO] 2020-11-28 14:47:19,634: Epoch-326, T-Loss: 0.147, E-Loss: 0.858, Time: 150.02s, Need: 13.09h, LR: 0.020, Acc: 80.05%
+
+[INFO] 2020-11-28 14:49:49,950: Epoch-327, T-Loss: 0.146, E-Loss: 0.853, Time: 150.09s, Need: 13.05h, LR: 0.020, Acc: 80.39%
+
+[INFO] 2020-11-28 14:52:20,449: Epoch-328, T-Loss: 0.144, E-Loss: 0.855, Time: 150.25s, Need: 13.02h, LR: 0.020, Acc: 80.19%
+
+[INFO] 2020-11-28 14:54:50,725: Epoch-329, T-Loss: 0.142, E-Loss: 0.851, Time: 150.02s, Need: 12.96h, LR: 0.020, Acc: 80.60%
+
+[INFO] 2020-11-28 14:54:51,022: [  BEST  ] - A best model in epoch 329 - 80.600%
+
+[INFO] 2020-11-28 14:57:21,321: Epoch-330, T-Loss: 0.148, E-Loss: 0.859, Time: 150.30s, Need: 12.94h, LR: 0.020, Acc: 80.60%
+
+[INFO] 2020-11-28 14:59:51,620: Epoch-331, T-Loss: 0.143, E-Loss: 0.838, Time: 150.06s, Need: 12.88h, LR: 0.020, Acc: 80.38%
+
+[INFO] 2020-11-28 15:02:22,127: Epoch-332, T-Loss: 0.143, E-Loss: 0.843, Time: 150.27s, Need: 12.86h, LR: 0.020, Acc: 80.38%
+
+[INFO] 2020-11-28 15:04:52,478: Epoch-333, T-Loss: 0.138, E-Loss: 0.845, Time: 150.12s, Need: 12.80h, LR: 0.020, Acc: 80.37%
+
+[INFO] 2020-11-28 15:07:22,878: Epoch-334, T-Loss: 0.145, E-Loss: 0.845, Time: 150.16s, Need: 12.76h, LR: 0.020, Acc: 80.51%
+
+[INFO] 2020-11-28 15:09:53,249: Epoch-335, T-Loss: 0.139, E-Loss: 0.841, Time: 150.14s, Need: 12.72h, LR: 0.020, Acc: 80.20%
+
+[INFO] 2020-11-28 15:12:23,594: Epoch-336, T-Loss: 0.141, E-Loss: 0.849, Time: 150.09s, Need: 12.67h, LR: 0.020, Acc: 80.54%
+
+[INFO] 2020-11-28 15:14:54,016: Epoch-337, T-Loss: 0.140, E-Loss: 0.838, Time: 150.18s, Need: 12.64h, LR: 0.020, Acc: 80.36%
+
+[INFO] 2020-11-28 15:17:24,388: Epoch-338, T-Loss: 0.133, E-Loss: 0.832, Time: 150.14s, Need: 12.60h, LR: 0.020, Acc: 80.45%
+
+[INFO] 2020-11-28 15:19:54,818: Epoch-339, T-Loss: 0.135, E-Loss: 0.847, Time: 150.18s, Need: 12.56h, LR: 0.020, Acc: 80.16%
+
+[INFO] 2020-11-28 15:22:25,265: Epoch-340, T-Loss: 0.139, E-Loss: 0.841, Time: 150.19s, Need: 12.52h, LR: 0.020, Acc: 80.50%
+
+[INFO] 2020-11-28 15:24:56,422: Epoch-341, T-Loss: 0.133, E-Loss: 0.832, Time: 150.18s, Need: 12.47h, LR: 0.020, Acc: 80.78%
+
+[INFO] 2020-11-28 15:24:56,716: [  BEST  ] - A best model in epoch 341 - 80.780%
+
+[INFO] 2020-11-28 15:27:26,902: Epoch-342, T-Loss: 0.129, E-Loss: 0.833, Time: 150.18s, Need: 12.43h, LR: 0.020, Acc: 80.75%
+
+[INFO] 2020-11-28 15:29:57,229: Epoch-343, T-Loss: 0.139, E-Loss: 0.826, Time: 150.08s, Need: 12.38h, LR: 0.020, Acc: 80.57%
+
+[INFO] 2020-11-28 15:32:27,609: Epoch-344, T-Loss: 0.135, E-Loss: 0.831, Time: 150.15s, Need: 12.35h, LR: 0.020, Acc: 80.38%
+
+[INFO] 2020-11-28 15:34:57,993: Epoch-345, T-Loss: 0.135, E-Loss: 0.828, Time: 150.14s, Need: 12.30h, LR: 0.020, Acc: 80.49%
+
+[INFO] 2020-11-28 15:37:28,277: Epoch-346, T-Loss: 0.136, E-Loss: 0.832, Time: 150.05s, Need: 12.25h, LR: 0.020, Acc: 80.28%
+
+[INFO] 2020-11-28 15:39:58,765: Epoch-347, T-Loss: 0.137, E-Loss: 0.834, Time: 149.98s, Need: 12.21h, LR: 0.020, Acc: 80.28%
+
+[INFO] 2020-11-28 15:42:29,368: Epoch-348, T-Loss: 0.139, E-Loss: 0.835, Time: 150.37s, Need: 12.20h, LR: 0.020, Acc: 80.08%
+
+[INFO] 2020-11-28 15:44:59,668: Epoch-349, T-Loss: 0.131, E-Loss: 0.828, Time: 150.05s, Need: 12.13h, LR: 0.020, Acc: 80.43%
+
+[INFO] 2020-11-28 15:47:30,165: Epoch-350, T-Loss: 0.133, E-Loss: 0.828, Time: 150.26s, Need: 12.10h, LR: 0.020, Acc: 80.30%
+
+[INFO] 2020-11-28 15:50:00,548: Epoch-351, T-Loss: 0.135, E-Loss: 0.831, Time: 150.13s, Need: 12.05h, LR: 0.020, Acc: 80.41%
+
+[INFO] 2020-11-28 15:52:31,442: Epoch-352, T-Loss: 0.132, E-Loss: 0.828, Time: 150.65s, Need: 12.05h, LR: 0.020, Acc: 80.42%
+
+[INFO] 2020-11-28 15:55:02,113: Epoch-353, T-Loss: 0.124, E-Loss: 0.819, Time: 150.42s, Need: 11.99h, LR: 0.020, Acc: 80.03%
+
+[INFO] 2020-11-28 15:57:32,771: Epoch-354, T-Loss: 0.130, E-Loss: 0.825, Time: 150.41s, Need: 11.95h, LR: 0.020, Acc: 80.47%
+
+[INFO] 2020-11-28 16:00:03,418: Epoch-355, T-Loss: 0.129, E-Loss: 0.821, Time: 150.40s, Need: 11.91h, LR: 0.020, Acc: 80.85%
+
+[INFO] 2020-11-28 16:00:03,716: [  BEST  ] - A best model in epoch 355 - 80.850%
+
+[INFO] 2020-11-28 16:02:34,266: Epoch-356, T-Loss: 0.132, E-Loss: 0.816, Time: 150.55s, Need: 11.88h, LR: 0.020, Acc: 80.63%
+
+[INFO] 2020-11-28 16:05:04,751: Epoch-357, T-Loss: 0.135, E-Loss: 0.818, Time: 150.24s, Need: 11.81h, LR: 0.020, Acc: 80.55%
+
+[INFO] 2020-11-28 16:07:35,377: Epoch-358, T-Loss: 0.130, E-Loss: 0.810, Time: 150.38s, Need: 11.78h, LR: 0.020, Acc: 80.46%
+
+[INFO] 2020-11-28 16:10:05,926: Epoch-359, T-Loss: 0.129, E-Loss: 0.815, Time: 150.32s, Need: 11.73h, LR: 0.020, Acc: 80.54%
+
+[INFO] 2020-11-28 16:12:36,712: Epoch-360, T-Loss: 0.128, E-Loss: 0.820, Time: 150.53s, Need: 11.71h, LR: 0.020, Acc: 80.52%
+
+[INFO] 2020-11-28 16:15:07,288: Epoch-361, T-Loss: 0.132, E-Loss: 0.815, Time: 150.31s, Need: 11.65h, LR: 0.020, Acc: 80.79%
+
+[INFO] 2020-11-28 16:17:37,862: Epoch-362, T-Loss: 0.129, E-Loss: 0.806, Time: 150.34s, Need: 11.61h, LR: 0.020, Acc: 80.49%
+
+[INFO] 2020-11-28 16:20:08,415: Epoch-363, T-Loss: 0.132, E-Loss: 0.821, Time: 150.31s, Need: 11.57h, LR: 0.020, Acc: 80.43%
+
+[INFO] 2020-11-28 16:22:39,157: Epoch-364, T-Loss: 0.135, E-Loss: 0.814, Time: 150.51s, Need: 11.54h, LR: 0.020, Acc: 80.39%
+
+[INFO] 2020-11-28 16:25:10,250: Epoch-365, T-Loss: 0.129, E-Loss: 0.818, Time: 150.59s, Need: 11.50h, LR: 0.020, Acc: 80.44%
+
+[INFO] 2020-11-28 16:27:40,883: Epoch-366, T-Loss: 0.129, E-Loss: 0.835, Time: 150.33s, Need: 11.44h, LR: 0.020, Acc: 80.04%
+
+[INFO] 2020-11-28 16:30:11,473: Epoch-367, T-Loss: 0.126, E-Loss: 0.818, Time: 150.34s, Need: 11.40h, LR: 0.020, Acc: 80.26%
+
+[INFO] 2020-11-28 16:32:42,170: Epoch-368, T-Loss: 0.131, E-Loss: 0.815, Time: 150.45s, Need: 11.37h, LR: 0.020, Acc: 80.10%
+
+[INFO] 2020-11-28 16:35:12,827: Epoch-369, T-Loss: 0.123, E-Loss: 0.809, Time: 150.41s, Need: 11.32h, LR: 0.020, Acc: 80.22%
+
+[INFO] 2020-11-28 16:37:43,470: Epoch-370, T-Loss: 0.127, E-Loss: 0.820, Time: 150.39s, Need: 11.28h, LR: 0.020, Acc: 80.26%
+
+[INFO] 2020-11-28 16:40:14,041: Epoch-371, T-Loss: 0.124, E-Loss: 0.805, Time: 150.33s, Need: 11.23h, LR: 0.020, Acc: 80.22%
+
+[INFO] 2020-11-28 16:42:44,797: Epoch-372, T-Loss: 0.127, E-Loss: 0.801, Time: 150.51s, Need: 11.20h, LR: 0.020, Acc: 80.42%
+
+[INFO] 2020-11-28 16:45:15,368: Epoch-373, T-Loss: 0.130, E-Loss: 0.809, Time: 150.32s, Need: 11.15h, LR: 0.020, Acc: 80.01%
+
+[INFO] 2020-11-28 16:47:45,989: Epoch-374, T-Loss: 0.125, E-Loss: 0.814, Time: 150.37s, Need: 11.11h, LR: 0.020, Acc: 79.92%
+
+[INFO] 2020-11-28 16:50:16,538: Epoch-375, T-Loss: 0.134, E-Loss: 0.809, Time: 150.30s, Need: 11.06h, LR: 0.020, Acc: 80.35%
+
+[INFO] 2020-11-28 16:52:47,346: Epoch-376, T-Loss: 0.123, E-Loss: 0.803, Time: 150.55s, Need: 11.04h, LR: 0.020, Acc: 79.90%
+
+[INFO] 2020-11-28 16:55:18,306: Epoch-377, T-Loss: 0.127, E-Loss: 0.810, Time: 150.72s, Need: 11.01h, LR: 0.020, Acc: 80.04%
+
+[INFO] 2020-11-28 16:57:48,910: Epoch-378, T-Loss: 0.127, E-Loss: 0.790, Time: 150.35s, Need: 10.94h, LR: 0.020, Acc: 80.57%
+
+[INFO] 2020-11-28 17:00:19,606: Epoch-379, T-Loss: 0.126, E-Loss: 0.805, Time: 150.44s, Need: 10.91h, LR: 0.020, Acc: 80.25%
+
+[INFO] 2020-11-28 17:02:50,322: Epoch-380, T-Loss: 0.126, E-Loss: 0.816, Time: 150.46s, Need: 10.87h, LR: 0.020, Acc: 80.41%
+
+[INFO] 2020-11-28 17:05:21,106: Epoch-381, T-Loss: 0.128, E-Loss: 0.804, Time: 150.33s, Need: 10.82h, LR: 0.020, Acc: 80.37%
+
+[INFO] 2020-11-28 17:07:51,637: Epoch-382, T-Loss: 0.128, E-Loss: 0.811, Time: 150.29s, Need: 10.77h, LR: 0.020, Acc: 79.73%
+
+[INFO] 2020-11-28 17:10:22,379: Epoch-383, T-Loss: 0.135, E-Loss: 0.809, Time: 150.46s, Need: 10.74h, LR: 0.020, Acc: 80.38%
+
+[INFO] 2020-11-28 17:12:53,120: Epoch-384, T-Loss: 0.125, E-Loss: 0.816, Time: 150.48s, Need: 10.70h, LR: 0.020, Acc: 79.90%
+
+[INFO] 2020-11-28 17:15:23,622: Epoch-385, T-Loss: 0.127, E-Loss: 0.810, Time: 150.25s, Need: 10.64h, LR: 0.020, Acc: 80.30%
+
+[INFO] 2020-11-28 17:17:54,216: Epoch-386, T-Loss: 0.128, E-Loss: 0.807, Time: 150.35s, Need: 10.61h, LR: 0.020, Acc: 79.92%
+
+[INFO] 2020-11-28 17:20:24,930: Epoch-387, T-Loss: 0.127, E-Loss: 0.806, Time: 150.46s, Need: 10.57h, LR: 0.020, Acc: 80.39%
+
+[INFO] 2020-11-28 17:22:56,177: Epoch-388, T-Loss: 0.128, E-Loss: 0.811, Time: 150.75s, Need: 10.55h, LR: 0.020, Acc: 79.63%
+
+[INFO] 2020-11-28 17:25:26,830: Epoch-389, T-Loss: 0.132, E-Loss: 0.823, Time: 150.41s, Need: 10.49h, LR: 0.020, Acc: 79.89%
+
+[INFO] 2020-11-28 17:27:57,329: Epoch-390, T-Loss: 0.125, E-Loss: 0.808, Time: 150.25s, Need: 10.43h, LR: 0.020, Acc: 80.17%
+
+[INFO] 2020-11-28 17:30:28,108: Epoch-391, T-Loss: 0.122, E-Loss: 0.810, Time: 150.48s, Need: 10.41h, LR: 0.020, Acc: 80.27%
+
+[INFO] 2020-11-28 17:32:58,713: Epoch-392, T-Loss: 0.129, E-Loss: 0.807, Time: 150.36s, Need: 10.36h, LR: 0.020, Acc: 80.40%
+
+[INFO] 2020-11-28 17:35:29,512: Epoch-393, T-Loss: 0.128, E-Loss: 0.796, Time: 150.56s, Need: 10.33h, LR: 0.020, Acc: 80.65%
+
+[INFO] 2020-11-28 17:38:00,184: Epoch-394, T-Loss: 0.130, E-Loss: 0.801, Time: 150.41s, Need: 10.28h, LR: 0.020, Acc: 80.17%
+
+[INFO] 2020-11-28 17:40:30,949: Epoch-395, T-Loss: 0.127, E-Loss: 0.806, Time: 150.52s, Need: 10.24h, LR: 0.020, Acc: 79.82%
+
+[INFO] 2020-11-28 17:43:01,715: Epoch-396, T-Loss: 0.127, E-Loss: 0.802, Time: 150.52s, Need: 10.20h, LR: 0.020, Acc: 80.19%
+
+[INFO] 2020-11-28 17:45:32,390: Epoch-397, T-Loss: 0.129, E-Loss: 0.801, Time: 150.43s, Need: 10.15h, LR: 0.020, Acc: 80.03%
+
+[INFO] 2020-11-28 17:48:03,050: Epoch-398, T-Loss: 0.128, E-Loss: 0.811, Time: 150.41s, Need: 10.11h, LR: 0.020, Acc: 80.41%
+
+[INFO] 2020-11-28 17:50:33,744: Epoch-399, T-Loss: 0.128, E-Loss: 0.810, Time: 150.45s, Need: 10.07h, LR: 0.020, Acc: 80.23%
+
+[INFO] 2020-11-28 17:53:04,509: Epoch-400, T-Loss: 0.126, E-Loss: 0.844, Time: 150.51s, Need: 10.03h, LR: 0.020, Acc: 79.92%
+
+[INFO] 2020-11-28 17:55:35,095: Epoch-401, T-Loss: 0.128, E-Loss: 0.822, Time: 150.34s, Need: 9.98h, LR: 0.020, Acc: 79.88%
+
+[INFO] 2020-11-28 17:58:05,638: Epoch-402, T-Loss: 0.127, E-Loss: 0.822, Time: 150.29s, Need: 9.94h, LR: 0.020, Acc: 79.79%
+
+[INFO] 2020-11-28 18:00:36,421: Epoch-403, T-Loss: 0.132, E-Loss: 0.818, Time: 150.55s, Need: 9.91h, LR: 0.020, Acc: 79.98%
+
+[INFO] 2020-11-28 18:03:07,204: Epoch-404, T-Loss: 0.131, E-Loss: 0.810, Time: 150.44s, Need: 9.86h, LR: 0.020, Acc: 80.36%
+
+[INFO] 2020-11-28 18:05:38,832: Epoch-405, T-Loss: 0.136, E-Loss: 0.811, Time: 150.45s, Need: 9.82h, LR: 0.020, Acc: 80.09%
+
+[INFO] 2020-11-28 18:08:09,809: Epoch-406, T-Loss: 0.129, E-Loss: 0.820, Time: 150.52s, Need: 9.78h, LR: 0.020, Acc: 80.55%
+
+[INFO] 2020-11-28 18:10:40,286: Epoch-407, T-Loss: 0.134, E-Loss: 0.834, Time: 150.24s, Need: 9.72h, LR: 0.020, Acc: 80.14%
+
+[INFO] 2020-11-28 18:13:10,839: Epoch-408, T-Loss: 0.132, E-Loss: 0.827, Time: 150.29s, Need: 9.69h, LR: 0.020, Acc: 80.16%
+
+[INFO] 2020-11-28 18:15:41,559: Epoch-409, T-Loss: 0.133, E-Loss: 0.823, Time: 150.47s, Need: 9.66h, LR: 0.020, Acc: 80.37%
+
+[INFO] 2020-11-28 18:18:12,359: Epoch-410, T-Loss: 0.135, E-Loss: 0.820, Time: 150.54s, Need: 9.62h, LR: 0.020, Acc: 80.35%
+
+[INFO] 2020-11-28 18:20:43,081: Epoch-411, T-Loss: 0.137, E-Loss: 0.832, Time: 150.48s, Need: 9.57h, LR: 0.020, Acc: 79.87%
+
+[INFO] 2020-11-28 18:23:13,614: Epoch-412, T-Loss: 0.134, E-Loss: 0.836, Time: 150.29s, Need: 9.52h, LR: 0.020, Acc: 79.75%
+
+[INFO] 2020-11-28 18:25:44,250: Epoch-413, T-Loss: 0.135, E-Loss: 0.835, Time: 150.40s, Need: 9.48h, LR: 0.020, Acc: 79.90%
+
+[INFO] 2020-11-28 18:28:14,940: Epoch-414, T-Loss: 0.136, E-Loss: 0.861, Time: 150.46s, Need: 9.45h, LR: 0.020, Acc: 79.21%
+
+[INFO] 2020-11-28 18:30:45,510: Epoch-415, T-Loss: 0.127, E-Loss: 0.844, Time: 150.31s, Need: 9.39h, LR: 0.020, Acc: 79.82%
+
+[INFO] 2020-11-28 18:33:16,177: Epoch-416, T-Loss: 0.129, E-Loss: 0.833, Time: 150.43s, Need: 9.36h, LR: 0.020, Acc: 79.88%
+
+[INFO] 2020-11-28 18:35:46,804: Epoch-417, T-Loss: 0.137, E-Loss: 0.831, Time: 150.38s, Need: 9.32h, LR: 0.020, Acc: 79.77%
+
+[INFO] 2020-11-28 18:38:17,500: Epoch-418, T-Loss: 0.132, E-Loss: 0.854, Time: 150.42s, Need: 9.28h, LR: 0.020, Acc: 79.61%
+
+[INFO] 2020-11-28 18:40:47,997: Epoch-419, T-Loss: 0.138, E-Loss: 0.856, Time: 150.27s, Need: 9.22h, LR: 0.020, Acc: 79.51%
+
+[INFO] 2020-11-28 18:43:18,648: Epoch-420, T-Loss: 0.135, E-Loss: 0.840, Time: 150.42s, Need: 9.19h, LR: 0.020, Acc: 79.74%
+
+[INFO] 2020-11-28 18:45:49,352: Epoch-421, T-Loss: 0.133, E-Loss: 0.841, Time: 150.46s, Need: 9.15h, LR: 0.020, Acc: 79.50%
+
+[INFO] 2020-11-28 18:48:20,078: Epoch-422, T-Loss: 0.135, E-Loss: 0.843, Time: 150.49s, Need: 9.11h, LR: 0.020, Acc: 79.75%
+
+[INFO] 2020-11-28 18:50:50,867: Epoch-423, T-Loss: 0.135, E-Loss: 0.845, Time: 150.54s, Need: 9.07h, LR: 0.020, Acc: 79.49%
+
+[INFO] 2020-11-28 18:53:21,483: Epoch-424, T-Loss: 0.137, E-Loss: 0.843, Time: 150.37s, Need: 9.02h, LR: 0.020, Acc: 79.57%
+
+[INFO] 2020-11-28 18:55:52,403: Epoch-425, T-Loss: 0.136, E-Loss: 0.858, Time: 150.68s, Need: 9.00h, LR: 0.020, Acc: 79.39%
+
+[INFO] 2020-11-28 18:58:23,344: Epoch-426, T-Loss: 0.138, E-Loss: 0.849, Time: 150.64s, Need: 8.95h, LR: 0.020, Acc: 79.79%
+
+[INFO] 2020-11-28 19:00:54,178: Epoch-427, T-Loss: 0.135, E-Loss: 0.853, Time: 150.59s, Need: 8.91h, LR: 0.020, Acc: 79.28%
+
+[INFO] 2020-11-28 19:03:25,243: Epoch-428, T-Loss: 0.131, E-Loss: 0.850, Time: 150.53s, Need: 8.86h, LR: 0.020, Acc: 79.73%
+
+[INFO] 2020-11-28 19:05:56,158: Epoch-429, T-Loss: 0.138, E-Loss: 0.875, Time: 150.58s, Need: 8.83h, LR: 0.020, Acc: 79.59%
+
+[INFO] 2020-11-28 19:08:27,288: Epoch-430, T-Loss: 0.131, E-Loss: 0.871, Time: 150.70s, Need: 8.79h, LR: 0.020, Acc: 79.16%
+
+[INFO] 2020-11-28 19:10:58,291: Epoch-431, T-Loss: 0.142, E-Loss: 0.847, Time: 150.61s, Need: 8.74h, LR: 0.020, Acc: 79.66%
+
+[INFO] 2020-11-28 19:13:29,048: Epoch-432, T-Loss: 0.139, E-Loss: 0.865, Time: 150.52s, Need: 8.70h, LR: 0.020, Acc: 79.50%
+
+[INFO] 2020-11-28 19:16:00,364: Epoch-433, T-Loss: 0.136, E-Loss: 0.864, Time: 150.77s, Need: 8.67h, LR: 0.020, Acc: 79.34%
+
+[INFO] 2020-11-28 19:18:31,288: Epoch-434, T-Loss: 0.139, E-Loss: 0.855, Time: 150.60s, Need: 8.62h, LR: 0.020, Acc: 79.37%
+
+[INFO] 2020-11-28 19:21:02,211: Epoch-435, T-Loss: 0.138, E-Loss: 0.858, Time: 150.68s, Need: 8.58h, LR: 0.020, Acc: 79.53%
+
+[INFO] 2020-11-28 19:23:32,980: Epoch-436, T-Loss: 0.144, E-Loss: 0.852, Time: 150.47s, Need: 8.53h, LR: 0.020, Acc: 79.70%
+
+[INFO] 2020-11-28 19:26:03,957: Epoch-437, T-Loss: 0.139, E-Loss: 0.852, Time: 150.74s, Need: 8.50h, LR: 0.020, Acc: 79.35%
+
+[INFO] 2020-11-28 19:28:35,001: Epoch-438, T-Loss: 0.140, E-Loss: 0.882, Time: 150.71s, Need: 8.46h, LR: 0.020, Acc: 79.30%
+
+[INFO] 2020-11-28 19:31:05,930: Epoch-439, T-Loss: 0.138, E-Loss: 0.855, Time: 150.68s, Need: 8.41h, LR: 0.020, Acc: 79.41%
+
+[INFO] 2020-11-28 19:33:36,745: Epoch-440, T-Loss: 0.139, E-Loss: 0.872, Time: 150.50s, Need: 8.36h, LR: 0.020, Acc: 79.18%
+
+[INFO] 2020-11-28 19:36:07,626: Epoch-441, T-Loss: 0.136, E-Loss: 0.859, Time: 150.64s, Need: 8.33h, LR: 0.020, Acc: 79.45%
+
+[INFO] 2020-11-28 19:38:38,439: Epoch-442, T-Loss: 0.141, E-Loss: 0.867, Time: 150.56s, Need: 8.28h, LR: 0.020, Acc: 79.32%
+
+[INFO] 2020-11-28 19:41:09,393: Epoch-443, T-Loss: 0.138, E-Loss: 0.858, Time: 150.63s, Need: 8.24h, LR: 0.020, Acc: 79.46%
+
+[INFO] 2020-11-28 19:43:40,246: Epoch-444, T-Loss: 0.144, E-Loss: 0.840, Time: 150.60s, Need: 8.20h, LR: 0.020, Acc: 79.67%
+
+[INFO] 2020-11-28 19:46:11,209: Epoch-445, T-Loss: 0.137, E-Loss: 0.877, Time: 150.71s, Need: 8.16h, LR: 0.020, Acc: 79.39%
+
+[INFO] 2020-11-28 19:48:41,939: Epoch-446, T-Loss: 0.144, E-Loss: 0.869, Time: 150.49s, Need: 8.11h, LR: 0.020, Acc: 79.20%
+
+[INFO] 2020-11-28 19:51:12,755: Epoch-447, T-Loss: 0.141, E-Loss: 0.884, Time: 150.57s, Need: 8.07h, LR: 0.020, Acc: 79.29%
+
+[INFO] 2020-11-28 19:53:43,557: Epoch-448, T-Loss: 0.138, E-Loss: 0.860, Time: 150.56s, Need: 8.03h, LR: 0.020, Acc: 79.54%
+
+[INFO] 2020-11-28 19:56:14,425: Epoch-449, T-Loss: 0.145, E-Loss: 0.883, Time: 150.63s, Need: 7.99h, LR: 0.002, Acc: 79.06%
+
+[INFO] 2020-11-28 19:58:45,247: Epoch-450, T-Loss: 0.125, E-Loss: 0.831, Time: 150.58s, Need: 7.95h, LR: 0.002, Acc: 80.18%
+
+[INFO] 2020-11-28 20:01:16,193: Epoch-451, T-Loss: 0.116, E-Loss: 0.813, Time: 150.71s, Need: 7.91h, LR: 0.002, Acc: 80.37%
+
+[INFO] 2020-11-28 20:03:46,966: Epoch-452, T-Loss: 0.114, E-Loss: 0.810, Time: 150.54s, Need: 7.86h, LR: 0.002, Acc: 80.26%
+
+[INFO] 2020-11-28 20:06:17,939: Epoch-453, T-Loss: 0.111, E-Loss: 0.804, Time: 150.68s, Need: 7.83h, LR: 0.002, Acc: 80.73%
+
+[INFO] 2020-11-28 20:08:48,975: Epoch-454, T-Loss: 0.116, E-Loss: 0.797, Time: 150.78s, Need: 7.79h, LR: 0.002, Acc: 80.64%
+
+[INFO] 2020-11-28 20:11:19,898: Epoch-455, T-Loss: 0.107, E-Loss: 0.796, Time: 150.67s, Need: 7.74h, LR: 0.002, Acc: 80.51%
+
+[INFO] 2020-11-28 20:13:50,626: Epoch-456, T-Loss: 0.109, E-Loss: 0.790, Time: 150.48s, Need: 7.69h, LR: 0.002, Acc: 80.67%
+
+[INFO] 2020-11-28 20:16:21,488: Epoch-457, T-Loss: 0.103, E-Loss: 0.788, Time: 150.63s, Need: 7.66h, LR: 0.002, Acc: 80.71%
+
+[INFO] 2020-11-28 20:18:52,303: Epoch-458, T-Loss: 0.106, E-Loss: 0.783, Time: 150.58s, Need: 7.61h, LR: 0.002, Acc: 80.68%
+
+[INFO] 2020-11-28 20:21:23,177: Epoch-459, T-Loss: 0.100, E-Loss: 0.784, Time: 150.59s, Need: 7.57h, LR: 0.002, Acc: 80.60%
+
+[INFO] 2020-11-28 20:23:53,998: Epoch-460, T-Loss: 0.103, E-Loss: 0.782, Time: 150.57s, Need: 7.53h, LR: 0.002, Acc: 80.66%
+
+[INFO] 2020-11-28 20:26:25,047: Epoch-461, T-Loss: 0.099, E-Loss: 0.784, Time: 150.73s, Need: 7.49h, LR: 0.002, Acc: 80.56%
+
+[INFO] 2020-11-28 20:28:56,024: Epoch-462, T-Loss: 0.098, E-Loss: 0.782, Time: 150.73s, Need: 7.45h, LR: 0.002, Acc: 80.64%
+
+[INFO] 2020-11-28 20:31:27,233: Epoch-463, T-Loss: 0.095, E-Loss: 0.777, Time: 150.89s, Need: 7.42h, LR: 0.002, Acc: 80.63%
+
+[INFO] 2020-11-28 20:33:58,028: Epoch-464, T-Loss: 0.101, E-Loss: 0.780, Time: 150.56s, Need: 7.36h, LR: 0.002, Acc: 80.81%
+
+[INFO] 2020-11-28 20:36:28,921: Epoch-465, T-Loss: 0.099, E-Loss: 0.777, Time: 150.65s, Need: 7.32h, LR: 0.002, Acc: 80.88%
+
+[INFO] 2020-11-28 20:36:29,351: [  BEST  ] - A best model in epoch 465 - 80.880%
+
+[INFO] 2020-11-28 20:39:00,115: Epoch-466, T-Loss: 0.094, E-Loss: 0.776, Time: 150.76s, Need: 7.29h, LR: 0.002, Acc: 80.79%
+
+[INFO] 2020-11-28 20:41:31,014: Epoch-467, T-Loss: 0.096, E-Loss: 0.774, Time: 150.65s, Need: 7.24h, LR: 0.002, Acc: 80.72%
+
+[INFO] 2020-11-28 20:44:01,982: Epoch-468, T-Loss: 0.094, E-Loss: 0.776, Time: 150.67s, Need: 7.20h, LR: 0.002, Acc: 80.79%
+
+[INFO] 2020-11-28 20:46:32,966: Epoch-469, T-Loss: 0.096, E-Loss: 0.773, Time: 150.73s, Need: 7.16h, LR: 0.002, Acc: 81.02%
+
+[INFO] 2020-11-28 20:46:33,379: [  BEST  ] - A best model in epoch 469 - 81.020%
+
+[INFO] 2020-11-28 20:49:03,934: Epoch-470, T-Loss: 0.102, E-Loss: 0.774, Time: 150.55s, Need: 7.11h, LR: 0.002, Acc: 80.94%
+
+[INFO] 2020-11-28 20:51:34,714: Epoch-471, T-Loss: 0.094, E-Loss: 0.775, Time: 150.53s, Need: 7.07h, LR: 0.002, Acc: 81.03%
+
+[INFO] 2020-11-28 20:51:35,076: [  BEST  ] - A best model in epoch 471 - 81.030%
+
+[INFO] 2020-11-28 20:54:05,718: Epoch-472, T-Loss: 0.094, E-Loss: 0.772, Time: 150.64s, Need: 7.03h, LR: 0.002, Acc: 80.90%
+
+[INFO] 2020-11-28 20:56:36,568: Epoch-473, T-Loss: 0.097, E-Loss: 0.773, Time: 150.60s, Need: 6.99h, LR: 0.002, Acc: 80.84%
+
+[INFO] 2020-11-28 20:59:07,508: Epoch-474, T-Loss: 0.094, E-Loss: 0.776, Time: 150.58s, Need: 6.94h, LR: 0.002, Acc: 80.83%
+
+[INFO] 2020-11-28 21:01:38,430: Epoch-475, T-Loss: 0.093, E-Loss: 0.771, Time: 150.68s, Need: 6.91h, LR: 0.002, Acc: 80.74%
+
+[INFO] 2020-11-28 21:04:09,380: Epoch-476, T-Loss: 0.092, E-Loss: 0.769, Time: 150.58s, Need: 6.86h, LR: 0.002, Acc: 81.07%
+
+[INFO] 2020-11-28 21:04:09,679: [  BEST  ] - A best model in epoch 476 - 81.070%
+
+[INFO] 2020-11-28 21:06:40,190: Epoch-477, T-Loss: 0.094, E-Loss: 0.771, Time: 150.51s, Need: 6.81h, LR: 0.002, Acc: 81.07%
+
+[INFO] 2020-11-28 21:09:10,967: Epoch-478, T-Loss: 0.092, E-Loss: 0.768, Time: 150.54s, Need: 6.77h, LR: 0.002, Acc: 80.78%
+
+[INFO] 2020-11-28 21:11:41,827: Epoch-479, T-Loss: 0.090, E-Loss: 0.767, Time: 150.61s, Need: 6.74h, LR: 0.002, Acc: 80.85%
+
+[INFO] 2020-11-28 21:14:12,890: Epoch-480, T-Loss: 0.089, E-Loss: 0.763, Time: 150.78s, Need: 6.70h, LR: 0.002, Acc: 80.85%
+
+[INFO] 2020-11-28 21:16:43,770: Epoch-481, T-Loss: 0.093, E-Loss: 0.765, Time: 150.64s, Need: 6.65h, LR: 0.002, Acc: 80.99%
+
+[INFO] 2020-11-28 21:19:14,569: Epoch-482, T-Loss: 0.091, E-Loss: 0.764, Time: 150.55s, Need: 6.61h, LR: 0.002, Acc: 80.81%
+
+[INFO] 2020-11-28 21:21:45,437: Epoch-483, T-Loss: 0.089, E-Loss: 0.761, Time: 150.59s, Need: 6.57h, LR: 0.002, Acc: 80.86%
+
+[INFO] 2020-11-28 21:24:18,754: Epoch-484, T-Loss: 0.095, E-Loss: 0.765, Time: 153.04s, Need: 6.63h, LR: 0.002, Acc: 80.88%
+
+[INFO] 2020-11-28 21:26:49,496: Epoch-485, T-Loss: 0.089, E-Loss: 0.764, Time: 150.49s, Need: 6.48h, LR: 0.002, Acc: 80.89%
+
+[INFO] 2020-11-28 21:29:20,148: Epoch-486, T-Loss: 0.096, E-Loss: 0.767, Time: 150.41s, Need: 6.43h, LR: 0.002, Acc: 80.95%
+
+[INFO] 2020-11-28 21:31:51,080: Epoch-487, T-Loss: 0.089, E-Loss: 0.765, Time: 150.65s, Need: 6.40h, LR: 0.002, Acc: 80.89%
+
+[INFO] 2020-11-28 21:34:22,359: Epoch-488, T-Loss: 0.094, E-Loss: 0.765, Time: 151.04s, Need: 6.38h, LR: 0.002, Acc: 81.00%
+
+[INFO] 2020-11-28 21:36:53,015: Epoch-489, T-Loss: 0.089, E-Loss: 0.768, Time: 150.42s, Need: 6.31h, LR: 0.002, Acc: 80.98%
+
+[INFO] 2020-11-28 21:39:23,814: Epoch-490, T-Loss: 0.089, E-Loss: 0.761, Time: 150.56s, Need: 6.27h, LR: 0.002, Acc: 80.95%
+
+[INFO] 2020-11-28 21:41:54,568: Epoch-491, T-Loss: 0.088, E-Loss: 0.764, Time: 150.50s, Need: 6.23h, LR: 0.002, Acc: 80.87%
+
+[INFO] 2020-11-28 21:44:25,842: Epoch-492, T-Loss: 0.093, E-Loss: 0.762, Time: 150.96s, Need: 6.21h, LR: 0.002, Acc: 80.80%
+
+[INFO] 2020-11-28 21:46:56,429: Epoch-493, T-Loss: 0.094, E-Loss: 0.761, Time: 150.33s, Need: 6.14h, LR: 0.002, Acc: 81.00%
+
+[INFO] 2020-11-28 21:49:27,194: Epoch-494, T-Loss: 0.088, E-Loss: 0.757, Time: 150.44s, Need: 6.10h, LR: 0.002, Acc: 80.95%
+
+[INFO] 2020-11-28 21:51:57,906: Epoch-495, T-Loss: 0.091, E-Loss: 0.757, Time: 150.47s, Need: 6.06h, LR: 0.002, Acc: 80.89%
+
+[INFO] 2020-11-28 21:54:28,674: Epoch-496, T-Loss: 0.091, E-Loss: 0.761, Time: 150.50s, Need: 6.02h, LR: 0.002, Acc: 81.23%
+
+[INFO] 2020-11-28 21:54:28,964: [  BEST  ] - A best model in epoch 496 - 81.230%
+
+[INFO] 2020-11-28 21:56:59,311: Epoch-497, T-Loss: 0.091, E-Loss: 0.763, Time: 150.35s, Need: 5.97h, LR: 0.002, Acc: 80.94%
+
+[INFO] 2020-11-28 21:59:30,013: Epoch-498, T-Loss: 0.088, E-Loss: 0.760, Time: 150.46s, Need: 5.93h, LR: 0.002, Acc: 80.81%
+
+[INFO] 2020-11-28 22:02:00,811: Epoch-499, T-Loss: 0.089, E-Loss: 0.760, Time: 150.54s, Need: 5.90h, LR: 0.002, Acc: 80.88%
+
+[INFO] 2020-11-28 22:04:31,646: Epoch-500, T-Loss: 0.089, E-Loss: 0.756, Time: 150.58s, Need: 5.86h, LR: 0.002, Acc: 80.97%
+
+[INFO] 2020-11-28 22:07:02,426: Epoch-501, T-Loss: 0.088, E-Loss: 0.758, Time: 150.54s, Need: 5.81h, LR: 0.002, Acc: 80.91%
+
+[INFO] 2020-11-28 22:09:33,175: Epoch-502, T-Loss: 0.083, E-Loss: 0.757, Time: 150.51s, Need: 5.77h, LR: 0.002, Acc: 81.13%
+
+[INFO] 2020-11-28 22:12:03,859: Epoch-503, T-Loss: 0.088, E-Loss: 0.760, Time: 150.43s, Need: 5.72h, LR: 0.002, Acc: 80.80%
+
+[INFO] 2020-11-28 22:14:34,655: Epoch-504, T-Loss: 0.083, E-Loss: 0.760, Time: 150.55s, Need: 5.69h, LR: 0.002, Acc: 80.84%
+
+[INFO] 2020-11-28 22:17:05,867: Epoch-505, T-Loss: 0.085, E-Loss: 0.761, Time: 150.95s, Need: 5.66h, LR: 0.002, Acc: 81.09%
+
+[INFO] 2020-11-28 22:19:36,689: Epoch-506, T-Loss: 0.084, E-Loss: 0.757, Time: 150.50s, Need: 5.60h, LR: 0.002, Acc: 81.23%
+
+[INFO] 2020-11-28 22:22:07,533: Epoch-507, T-Loss: 0.086, E-Loss: 0.753, Time: 150.58s, Need: 5.56h, LR: 0.002, Acc: 81.18%
+
+[INFO] 2020-11-28 22:24:38,375: Epoch-508, T-Loss: 0.089, E-Loss: 0.757, Time: 150.57s, Need: 5.52h, LR: 0.002, Acc: 81.05%
+
+[INFO] 2020-11-28 22:27:09,221: Epoch-509, T-Loss: 0.085, E-Loss: 0.755, Time: 150.60s, Need: 5.48h, LR: 0.002, Acc: 81.16%
+
+[INFO] 2020-11-28 22:29:40,227: Epoch-510, T-Loss: 0.087, E-Loss: 0.753, Time: 150.76s, Need: 5.44h, LR: 0.002, Acc: 80.99%
+
+[INFO] 2020-11-28 22:32:11,063: Epoch-511, T-Loss: 0.084, E-Loss: 0.751, Time: 150.58s, Need: 5.40h, LR: 0.002, Acc: 80.95%
+
+[INFO] 2020-11-28 22:34:41,920: Epoch-512, T-Loss: 0.084, E-Loss: 0.756, Time: 150.59s, Need: 5.35h, LR: 0.002, Acc: 81.04%
+
+[INFO] 2020-11-28 22:37:12,757: Epoch-513, T-Loss: 0.084, E-Loss: 0.755, Time: 150.59s, Need: 5.31h, LR: 0.002, Acc: 80.89%
+
+[INFO] 2020-11-28 22:39:43,594: Epoch-514, T-Loss: 0.085, E-Loss: 0.753, Time: 150.59s, Need: 5.27h, LR: 0.002, Acc: 81.14%
+
+[INFO] 2020-11-28 22:42:14,465: Epoch-515, T-Loss: 0.091, E-Loss: 0.757, Time: 150.63s, Need: 5.23h, LR: 0.002, Acc: 81.03%
+
+[INFO] 2020-11-28 22:44:45,487: Epoch-516, T-Loss: 0.087, E-Loss: 0.754, Time: 150.57s, Need: 5.19h, LR: 0.002, Acc: 80.88%
+
+[INFO] 2020-11-28 22:47:16,195: Epoch-517, T-Loss: 0.083, E-Loss: 0.753, Time: 150.46s, Need: 5.14h, LR: 0.002, Acc: 81.06%
+
+[INFO] 2020-11-28 22:49:47,123: Epoch-518, T-Loss: 0.079, E-Loss: 0.754, Time: 150.68s, Need: 5.11h, LR: 0.002, Acc: 81.15%
+
+[INFO] 2020-11-28 22:52:18,027: Epoch-519, T-Loss: 0.084, E-Loss: 0.753, Time: 150.66s, Need: 5.06h, LR: 0.002, Acc: 81.19%
+
+[INFO] 2020-11-28 22:54:48,958: Epoch-520, T-Loss: 0.086, E-Loss: 0.751, Time: 150.69s, Need: 5.02h, LR: 0.002, Acc: 81.13%
+
+[INFO] 2020-11-28 22:57:19,657: Epoch-521, T-Loss: 0.090, E-Loss: 0.755, Time: 150.44s, Need: 4.97h, LR: 0.002, Acc: 80.83%
+
+[INFO] 2020-11-28 22:59:50,429: Epoch-522, T-Loss: 0.088, E-Loss: 0.756, Time: 150.52s, Need: 4.93h, LR: 0.002, Acc: 80.98%
+
+[INFO] 2020-11-28 23:02:21,344: Epoch-523, T-Loss: 0.088, E-Loss: 0.747, Time: 150.66s, Need: 4.90h, LR: 0.002, Acc: 81.01%
+
+[INFO] 2020-11-28 23:04:52,197: Epoch-524, T-Loss: 0.084, E-Loss: 0.751, Time: 150.62s, Need: 4.85h, LR: 0.002, Acc: 80.93%
+
+[INFO] 2020-11-28 23:07:22,908: Epoch-525, T-Loss: 0.083, E-Loss: 0.752, Time: 150.46s, Need: 4.81h, LR: 0.002, Acc: 80.96%
+
+[INFO] 2020-11-28 23:09:53,637: Epoch-526, T-Loss: 0.082, E-Loss: 0.755, Time: 150.44s, Need: 4.76h, LR: 0.002, Acc: 81.04%
+
+[INFO] 2020-11-28 23:12:24,372: Epoch-527, T-Loss: 0.084, E-Loss: 0.757, Time: 150.46s, Need: 4.72h, LR: 0.002, Acc: 80.85%
+
+[INFO] 2020-11-28 23:14:55,116: Epoch-528, T-Loss: 0.080, E-Loss: 0.758, Time: 150.50s, Need: 4.68h, LR: 0.002, Acc: 80.85%
+
+[INFO] 2020-11-28 23:17:25,743: Epoch-529, T-Loss: 0.083, E-Loss: 0.756, Time: 150.38s, Need: 4.64h, LR: 0.002, Acc: 81.03%
+
+[INFO] 2020-11-28 23:19:56,409: Epoch-530, T-Loss: 0.083, E-Loss: 0.754, Time: 150.41s, Need: 4.60h, LR: 0.002, Acc: 81.01%
+
+[INFO] 2020-11-28 23:22:26,992: Epoch-531, T-Loss: 0.082, E-Loss: 0.752, Time: 150.33s, Need: 4.55h, LR: 0.002, Acc: 81.09%
+
+[INFO] 2020-11-28 23:24:57,581: Epoch-532, T-Loss: 0.082, E-Loss: 0.750, Time: 150.35s, Need: 4.51h, LR: 0.002, Acc: 81.10%
+
+[INFO] 2020-11-28 23:27:28,296: Epoch-533, T-Loss: 0.082, E-Loss: 0.754, Time: 150.47s, Need: 4.47h, LR: 0.002, Acc: 81.07%
+
+[INFO] 2020-11-28 23:29:59,163: Epoch-534, T-Loss: 0.084, E-Loss: 0.754, Time: 150.61s, Need: 4.43h, LR: 0.002, Acc: 80.80%
+
+[INFO] 2020-11-28 23:32:29,749: Epoch-535, T-Loss: 0.081, E-Loss: 0.752, Time: 150.33s, Need: 4.38h, LR: 0.002, Acc: 81.05%
+
+[INFO] 2020-11-28 23:35:00,506: Epoch-536, T-Loss: 0.081, E-Loss: 0.757, Time: 150.46s, Need: 4.35h, LR: 0.002, Acc: 81.01%
+
+[INFO] 2020-11-28 23:37:31,237: Epoch-537, T-Loss: 0.089, E-Loss: 0.754, Time: 150.48s, Need: 4.31h, LR: 0.002, Acc: 81.14%
+
+[INFO] 2020-11-28 23:40:01,852: Epoch-538, T-Loss: 0.083, E-Loss: 0.758, Time: 150.36s, Need: 4.26h, LR: 0.002, Acc: 80.93%
+
+[INFO] 2020-11-28 23:42:32,449: Epoch-539, T-Loss: 0.085, E-Loss: 0.753, Time: 150.34s, Need: 4.22h, LR: 0.002, Acc: 81.02%
+
+[INFO] 2020-11-28 23:45:03,115: Epoch-540, T-Loss: 0.083, E-Loss: 0.748, Time: 150.43s, Need: 4.18h, LR: 0.002, Acc: 81.03%
+
+[INFO] 2020-11-28 23:47:33,788: Epoch-541, T-Loss: 0.087, E-Loss: 0.754, Time: 150.42s, Need: 4.14h, LR: 0.002, Acc: 80.99%
+
+[INFO] 2020-11-28 23:50:04,452: Epoch-542, T-Loss: 0.082, E-Loss: 0.751, Time: 150.41s, Need: 4.09h, LR: 0.002, Acc: 81.04%
+
+[INFO] 2020-11-28 23:52:35,042: Epoch-543, T-Loss: 0.083, E-Loss: 0.750, Time: 150.34s, Need: 4.05h, LR: 0.002, Acc: 80.96%
+
+[INFO] 2020-11-28 23:55:05,714: Epoch-544, T-Loss: 0.081, E-Loss: 0.752, Time: 150.43s, Need: 4.01h, LR: 0.002, Acc: 81.03%
+
+[INFO] 2020-11-28 23:57:36,389: Epoch-545, T-Loss: 0.085, E-Loss: 0.753, Time: 150.42s, Need: 3.97h, LR: 0.002, Acc: 81.20%
+
+[INFO] 2020-11-29 00:00:07,082: Epoch-546, T-Loss: 0.081, E-Loss: 0.755, Time: 150.44s, Need: 3.93h, LR: 0.002, Acc: 81.09%
+
+[INFO] 2020-11-29 00:02:37,808: Epoch-547, T-Loss: 0.078, E-Loss: 0.749, Time: 150.47s, Need: 3.89h, LR: 0.002, Acc: 81.16%
+
+[INFO] 2020-11-29 00:05:08,410: Epoch-548, T-Loss: 0.081, E-Loss: 0.749, Time: 150.35s, Need: 3.84h, LR: 0.002, Acc: 81.08%
+
+[INFO] 2020-11-29 00:07:39,111: Epoch-549, T-Loss: 0.082, E-Loss: 0.747, Time: 150.45s, Need: 3.80h, LR: 0.002, Acc: 81.07%
+
+[INFO] 2020-11-29 00:10:09,897: Epoch-550, T-Loss: 0.085, E-Loss: 0.747, Time: 150.54s, Need: 3.76h, LR: 0.002, Acc: 80.96%
+
+[INFO] 2020-11-29 00:12:40,550: Epoch-551, T-Loss: 0.084, E-Loss: 0.743, Time: 150.40s, Need: 3.72h, LR: 0.002, Acc: 81.13%
+
+[INFO] 2020-11-29 00:15:11,237: Epoch-552, T-Loss: 0.081, E-Loss: 0.741, Time: 150.44s, Need: 3.68h, LR: 0.002, Acc: 81.04%
+
+[INFO] 2020-11-29 00:17:41,974: Epoch-553, T-Loss: 0.080, E-Loss: 0.745, Time: 150.46s, Need: 3.64h, LR: 0.002, Acc: 80.93%
+
+[INFO] 2020-11-29 00:20:12,575: Epoch-554, T-Loss: 0.076, E-Loss: 0.744, Time: 150.35s, Need: 3.59h, LR: 0.002, Acc: 81.23%
+
+[INFO] 2020-11-29 00:22:43,119: Epoch-555, T-Loss: 0.081, E-Loss: 0.745, Time: 150.28s, Need: 3.55h, LR: 0.002, Acc: 81.12%
+
+[INFO] 2020-11-29 00:25:13,863: Epoch-556, T-Loss: 0.080, E-Loss: 0.743, Time: 150.49s, Need: 3.51h, LR: 0.002, Acc: 81.15%
+
+[INFO] 2020-11-29 00:27:44,585: Epoch-557, T-Loss: 0.079, E-Loss: 0.742, Time: 150.46s, Need: 3.47h, LR: 0.002, Acc: 81.22%
+
+[INFO] 2020-11-29 00:30:15,310: Epoch-558, T-Loss: 0.083, E-Loss: 0.743, Time: 150.48s, Need: 3.43h, LR: 0.002, Acc: 81.23%
+
+[INFO] 2020-11-29 00:32:46,005: Epoch-559, T-Loss: 0.078, E-Loss: 0.742, Time: 150.44s, Need: 3.38h, LR: 0.002, Acc: 81.16%
+
+[INFO] 2020-11-29 00:35:16,652: Epoch-560, T-Loss: 0.078, E-Loss: 0.739, Time: 150.40s, Need: 3.34h, LR: 0.002, Acc: 81.09%
+
+[INFO] 2020-11-29 00:37:47,409: Epoch-561, T-Loss: 0.077, E-Loss: 0.750, Time: 150.50s, Need: 3.30h, LR: 0.002, Acc: 81.08%
+
+[INFO] 2020-11-29 00:40:18,133: Epoch-562, T-Loss: 0.081, E-Loss: 0.749, Time: 150.47s, Need: 3.26h, LR: 0.002, Acc: 80.92%
+
+[INFO] 2020-11-29 00:42:48,883: Epoch-563, T-Loss: 0.083, E-Loss: 0.742, Time: 150.49s, Need: 3.22h, LR: 0.002, Acc: 81.12%
+
+[INFO] 2020-11-29 00:45:19,544: Epoch-564, T-Loss: 0.083, E-Loss: 0.750, Time: 150.41s, Need: 3.18h, LR: 0.002, Acc: 80.83%
+
+[INFO] 2020-11-29 00:47:50,294: Epoch-565, T-Loss: 0.080, E-Loss: 0.751, Time: 150.50s, Need: 3.14h, LR: 0.002, Acc: 81.07%
+
+[INFO] 2020-11-29 00:50:21,088: Epoch-566, T-Loss: 0.083, E-Loss: 0.743, Time: 150.45s, Need: 3.09h, LR: 0.002, Acc: 80.85%
+
+[INFO] 2020-11-29 00:52:51,856: Epoch-567, T-Loss: 0.078, E-Loss: 0.742, Time: 150.46s, Need: 3.05h, LR: 0.002, Acc: 80.92%
+
+[INFO] 2020-11-29 00:55:22,434: Epoch-568, T-Loss: 0.083, E-Loss: 0.743, Time: 150.32s, Need: 3.01h, LR: 0.002, Acc: 80.91%
+
+[INFO] 2020-11-29 00:57:53,208: Epoch-569, T-Loss: 0.085, E-Loss: 0.746, Time: 150.49s, Need: 2.97h, LR: 0.002, Acc: 81.10%
+
+[INFO] 2020-11-29 01:00:24,013: Epoch-570, T-Loss: 0.080, E-Loss: 0.750, Time: 150.55s, Need: 2.93h, LR: 0.002, Acc: 80.91%
+
+[INFO] 2020-11-29 01:02:54,727: Epoch-571, T-Loss: 0.077, E-Loss: 0.743, Time: 150.46s, Need: 2.88h, LR: 0.002, Acc: 80.90%
+
+[INFO] 2020-11-29 01:05:25,274: Epoch-572, T-Loss: 0.077, E-Loss: 0.749, Time: 150.29s, Need: 2.84h, LR: 0.002, Acc: 80.97%
+
+[INFO] 2020-11-29 01:07:55,960: Epoch-573, T-Loss: 0.077, E-Loss: 0.750, Time: 150.42s, Need: 2.80h, LR: 0.002, Acc: 81.03%
+
+[INFO] 2020-11-29 01:10:26,717: Epoch-574, T-Loss: 0.080, E-Loss: 0.745, Time: 150.47s, Need: 2.76h, LR: 0.002, Acc: 80.90%
+
+[INFO] 2020-11-29 01:12:57,497: Epoch-575, T-Loss: 0.080, E-Loss: 0.742, Time: 150.53s, Need: 2.72h, LR: 0.002, Acc: 81.14%
+
+[INFO] 2020-11-29 01:15:28,343: Epoch-576, T-Loss: 0.082, E-Loss: 0.744, Time: 150.59s, Need: 2.68h, LR: 0.002, Acc: 81.00%
+
+[INFO] 2020-11-29 01:18:00,353: Epoch-577, T-Loss: 0.077, E-Loss: 0.742, Time: 150.48s, Need: 2.63h, LR: 0.002, Acc: 81.08%
+
+[INFO] 2020-11-29 01:20:31,225: Epoch-578, T-Loss: 0.074, E-Loss: 0.745, Time: 150.61s, Need: 2.59h, LR: 0.002, Acc: 81.16%
+
+[INFO] 2020-11-29 01:23:01,918: Epoch-579, T-Loss: 0.078, E-Loss: 0.740, Time: 150.44s, Need: 2.55h, LR: 0.002, Acc: 81.01%
+
+[INFO] 2020-11-29 01:25:32,535: Epoch-580, T-Loss: 0.081, E-Loss: 0.746, Time: 150.36s, Need: 2.51h, LR: 0.002, Acc: 80.99%
+
+[INFO] 2020-11-29 01:28:03,331: Epoch-581, T-Loss: 0.077, E-Loss: 0.744, Time: 150.55s, Need: 2.47h, LR: 0.002, Acc: 80.83%
+
+[INFO] 2020-11-29 01:30:34,382: Epoch-582, T-Loss: 0.081, E-Loss: 0.741, Time: 150.79s, Need: 2.43h, LR: 0.002, Acc: 81.01%
+
+[INFO] 2020-11-29 01:33:05,120: Epoch-583, T-Loss: 0.077, E-Loss: 0.737, Time: 150.48s, Need: 2.38h, LR: 0.002, Acc: 80.99%
+
+[INFO] 2020-11-29 01:35:35,834: Epoch-584, T-Loss: 0.078, E-Loss: 0.742, Time: 150.46s, Need: 2.34h, LR: 0.002, Acc: 81.02%
+
+[INFO] 2020-11-29 01:38:06,539: Epoch-585, T-Loss: 0.076, E-Loss: 0.738, Time: 150.45s, Need: 2.30h, LR: 0.002, Acc: 80.94%
+
+[INFO] 2020-11-29 01:40:37,288: Epoch-586, T-Loss: 0.080, E-Loss: 0.739, Time: 150.50s, Need: 2.26h, LR: 0.002, Acc: 81.13%
+
+[INFO] 2020-11-29 01:43:08,127: Epoch-587, T-Loss: 0.082, E-Loss: 0.743, Time: 150.59s, Need: 2.22h, LR: 0.002, Acc: 81.11%
+
+[INFO] 2020-11-29 01:45:38,767: Epoch-588, T-Loss: 0.082, E-Loss: 0.741, Time: 150.39s, Need: 2.17h, LR: 0.002, Acc: 80.97%
+
+[INFO] 2020-11-29 01:48:09,511: Epoch-589, T-Loss: 0.079, E-Loss: 0.739, Time: 150.47s, Need: 2.13h, LR: 0.002, Acc: 80.95%
+
+[INFO] 2020-11-29 01:50:40,128: Epoch-590, T-Loss: 0.075, E-Loss: 0.735, Time: 150.36s, Need: 2.09h, LR: 0.002, Acc: 80.90%
+
+[INFO] 2020-11-29 01:53:10,898: Epoch-591, T-Loss: 0.079, E-Loss: 0.739, Time: 150.52s, Need: 2.05h, LR: 0.002, Acc: 81.36%
+
+[INFO] 2020-11-29 01:53:11,212: [  BEST  ] - A best model in epoch 591 - 81.360%
+
+[INFO] 2020-11-29 01:55:41,730: Epoch-592, T-Loss: 0.078, E-Loss: 0.737, Time: 150.52s, Need: 2.01h, LR: 0.002, Acc: 81.34%
+
+[INFO] 2020-11-29 01:58:12,449: Epoch-593, T-Loss: 0.076, E-Loss: 0.741, Time: 150.44s, Need: 1.96h, LR: 0.002, Acc: 81.21%
+
+[INFO] 2020-11-29 02:00:43,091: Epoch-594, T-Loss: 0.074, E-Loss: 0.734, Time: 150.39s, Need: 1.92h, LR: 0.002, Acc: 81.30%
+
+[INFO] 2020-11-29 02:03:13,744: Epoch-595, T-Loss: 0.076, E-Loss: 0.736, Time: 150.40s, Need: 1.88h, LR: 0.002, Acc: 81.11%
+
+[INFO] 2020-11-29 02:05:44,474: Epoch-596, T-Loss: 0.077, E-Loss: 0.734, Time: 150.49s, Need: 1.84h, LR: 0.002, Acc: 81.15%
+
+[INFO] 2020-11-29 02:08:15,118: Epoch-597, T-Loss: 0.078, E-Loss: 0.739, Time: 150.39s, Need: 1.80h, LR: 0.002, Acc: 81.23%
+
+[INFO] 2020-11-29 02:10:45,811: Epoch-598, T-Loss: 0.074, E-Loss: 0.742, Time: 150.45s, Need: 1.76h, LR: 0.002, Acc: 81.08%
+
+[INFO] 2020-11-29 02:13:16,514: Epoch-599, T-Loss: 0.077, E-Loss: 0.741, Time: 150.42s, Need: 1.71h, LR: 0.002, Acc: 81.32%
+
+[INFO] 2020-11-29 02:15:47,312: Epoch-600, T-Loss: 0.077, E-Loss: 0.736, Time: 150.54s, Need: 1.67h, LR: 0.002, Acc: 81.18%
+
+[INFO] 2020-11-29 02:18:17,985: Epoch-601, T-Loss: 0.073, E-Loss: 0.734, Time: 150.42s, Need: 1.63h, LR: 0.002, Acc: 81.14%
+
+[INFO] 2020-11-29 02:20:48,734: Epoch-602, T-Loss: 0.078, E-Loss: 0.734, Time: 150.49s, Need: 1.59h, LR: 0.002, Acc: 81.23%
+
+[INFO] 2020-11-29 02:23:19,496: Epoch-603, T-Loss: 0.080, E-Loss: 0.733, Time: 150.52s, Need: 1.55h, LR: 0.002, Acc: 81.45%
+
+[INFO] 2020-11-29 02:23:19,796: [  BEST  ] - A best model in epoch 603 - 81.450%
+
+[INFO] 2020-11-29 02:25:50,232: Epoch-604, T-Loss: 0.081, E-Loss: 0.733, Time: 150.43s, Need: 1.50h, LR: 0.002, Acc: 81.22%
+
+[INFO] 2020-11-29 02:28:20,856: Epoch-605, T-Loss: 0.076, E-Loss: 0.733, Time: 150.35s, Need: 1.46h, LR: 0.002, Acc: 81.28%
+
+[INFO] 2020-11-29 02:30:51,574: Epoch-606, T-Loss: 0.076, E-Loss: 0.736, Time: 150.47s, Need: 1.42h, LR: 0.002, Acc: 81.28%
+
+[INFO] 2020-11-29 02:33:22,252: Epoch-607, T-Loss: 0.076, E-Loss: 0.735, Time: 150.42s, Need: 1.38h, LR: 0.002, Acc: 81.20%
+
+[INFO] 2020-11-29 02:35:52,894: Epoch-608, T-Loss: 0.078, E-Loss: 0.737, Time: 150.39s, Need: 1.34h, LR: 0.002, Acc: 81.15%
+
+[INFO] 2020-11-29 02:38:23,510: Epoch-609, T-Loss: 0.077, E-Loss: 0.733, Time: 150.34s, Need: 1.29h, LR: 0.002, Acc: 81.19%
+
+[INFO] 2020-11-29 02:40:54,294: Epoch-610, T-Loss: 0.076, E-Loss: 0.735, Time: 150.54s, Need: 1.25h, LR: 0.002, Acc: 81.17%
+
+[INFO] 2020-11-29 02:43:24,960: Epoch-611, T-Loss: 0.078, E-Loss: 0.730, Time: 150.41s, Need: 1.21h, LR: 0.002, Acc: 81.14%
+
+[INFO] 2020-11-29 02:45:55,633: Epoch-612, T-Loss: 0.081, E-Loss: 0.735, Time: 150.43s, Need: 1.17h, LR: 0.002, Acc: 81.07%
+
+[INFO] 2020-11-29 02:48:26,337: Epoch-613, T-Loss: 0.077, E-Loss: 0.735, Time: 150.45s, Need: 1.13h, LR: 0.002, Acc: 81.24%
+
+[INFO] 2020-11-29 02:50:57,150: Epoch-614, T-Loss: 0.073, E-Loss: 0.733, Time: 150.57s, Need: 1.09h, LR: 0.002, Acc: 81.28%
+
+[INFO] 2020-11-29 02:53:27,778: Epoch-615, T-Loss: 0.079, E-Loss: 0.731, Time: 150.37s, Need: 1.04h, LR: 0.002, Acc: 81.18%
+
+[INFO] 2020-11-29 02:55:58,499: Epoch-616, T-Loss: 0.075, E-Loss: 0.728, Time: 150.47s, Need: 1.00h, LR: 0.002, Acc: 81.34%
+
+[INFO] 2020-11-29 02:58:29,256: Epoch-617, T-Loss: 0.073, E-Loss: 0.729, Time: 150.50s, Need: 0.96h, LR: 0.002, Acc: 81.02%
+
+[INFO] 2020-11-29 03:00:59,966: Epoch-618, T-Loss: 0.078, E-Loss: 0.730, Time: 150.45s, Need: 0.92h, LR: 0.002, Acc: 81.06%
+
+[INFO] 2020-11-29 03:03:30,592: Epoch-619, T-Loss: 0.079, E-Loss: 0.733, Time: 150.39s, Need: 0.88h, LR: 0.002, Acc: 81.26%
+
+[INFO] 2020-11-29 03:06:01,360: Epoch-620, T-Loss: 0.073, E-Loss: 0.727, Time: 150.52s, Need: 0.84h, LR: 0.002, Acc: 80.96%
+
+[INFO] 2020-11-29 03:08:32,100: Epoch-621, T-Loss: 0.072, E-Loss: 0.729, Time: 150.45s, Need: 0.79h, LR: 0.002, Acc: 81.15%
+
+[INFO] 2020-11-29 03:11:02,839: Epoch-622, T-Loss: 0.076, E-Loss: 0.731, Time: 150.49s, Need: 0.75h, LR: 0.002, Acc: 81.09%
+
+[INFO] 2020-11-29 03:13:33,669: Epoch-623, T-Loss: 0.076, E-Loss: 0.733, Time: 150.57s, Need: 0.71h, LR: 0.002, Acc: 81.13%
+
+[INFO] 2020-11-29 03:16:04,364: Epoch-624, T-Loss: 0.078, E-Loss: 0.737, Time: 150.44s, Need: 0.67h, LR: 0.002, Acc: 81.06%
+
+[INFO] 2020-11-29 03:18:35,144: Epoch-625, T-Loss: 0.073, E-Loss: 0.737, Time: 150.53s, Need: 0.63h, LR: 0.002, Acc: 80.97%
+
+[INFO] 2020-11-29 03:21:05,880: Epoch-626, T-Loss: 0.076, E-Loss: 0.732, Time: 150.47s, Need: 0.59h, LR: 0.002, Acc: 80.98%
+
+[INFO] 2020-11-29 03:23:36,652: Epoch-627, T-Loss: 0.075, E-Loss: 0.729, Time: 150.51s, Need: 0.54h, LR: 0.002, Acc: 80.91%
+
+[INFO] 2020-11-29 03:26:07,567: Epoch-628, T-Loss: 0.081, E-Loss: 0.730, Time: 150.66s, Need: 0.50h, LR: 0.002, Acc: 81.12%
+
+[INFO] 2020-11-29 03:28:38,391: Epoch-629, T-Loss: 0.074, E-Loss: 0.732, Time: 150.48s, Need: 0.46h, LR: 0.002, Acc: 81.01%
+
+[INFO] 2020-11-29 03:31:09,095: Epoch-630, T-Loss: 0.076, E-Loss: 0.732, Time: 150.44s, Need: 0.42h, LR: 0.002, Acc: 81.01%
+
+[INFO] 2020-11-29 03:33:39,869: Epoch-631, T-Loss: 0.075, E-Loss: 0.736, Time: 150.53s, Need: 0.38h, LR: 0.002, Acc: 80.99%
+
+[INFO] 2020-11-29 03:36:10,739: Epoch-632, T-Loss: 0.074, E-Loss: 0.737, Time: 150.62s, Need: 0.33h, LR: 0.002, Acc: 80.71%
+
+[INFO] 2020-11-29 03:38:41,450: Epoch-633, T-Loss: 0.073, E-Loss: 0.731, Time: 150.45s, Need: 0.29h, LR: 0.002, Acc: 80.79%
+
+[INFO] 2020-11-29 03:41:12,192: Epoch-634, T-Loss: 0.074, E-Loss: 0.738, Time: 150.48s, Need: 0.25h, LR: 0.002, Acc: 80.80%
+
+[INFO] 2020-11-29 03:43:42,900: Epoch-635, T-Loss: 0.076, E-Loss: 0.737, Time: 150.45s, Need: 0.21h, LR: 0.002, Acc: 81.04%
+
+[INFO] 2020-11-29 03:46:13,634: Epoch-636, T-Loss: 0.077, E-Loss: 0.733, Time: 150.49s, Need: 0.17h, LR: 0.002, Acc: 81.05%
+
+[INFO] 2020-11-29 03:48:44,391: Epoch-637, T-Loss: 0.070, E-Loss: 0.731, Time: 150.50s, Need: 0.13h, LR: 0.002, Acc: 80.87%
+
+[INFO] 2020-11-29 03:51:15,001: Epoch-638, T-Loss: 0.077, E-Loss: 0.730, Time: 150.36s, Need: 0.08h, LR: 0.002, Acc: 80.86%
+
+[INFO] 2020-11-29 03:53:45,838: Epoch-639, T-Loss: 0.073, E-Loss: 0.737, Time: 150.58s, Need: 0.04h, LR: 0.002, Acc: 81.01%
+
+[INFO] 2020-11-29 03:53:46,097: ### Finished Training! Best Acc: 81.450000%
+
