@@ -10,7 +10,7 @@ import torch.nn as nn
 import logging
 
 # 自定义的一些训练优化技巧以及常用函数，放在主文件里面有点乱，就整理出去了
-from utils.tricks import LabelSmoothCELoss, init_net_weight, add_weight_decay
+from utils.tricks import LabelSmoothCELoss, init_net_weight, add_weight_decay, mixup_data, mixup_criterion
 from utils.functions import parse_args, judge_device, save_checkpoint, log_parms, print_and_log
 
 # from models import DemoNet_Gray as Network
@@ -98,9 +98,9 @@ if __name__ == '__main__':
 
     # 损失函数
     if args.label_smoothing:
-        criterion = LabelSmoothCELoss() # 标签平滑损失函数，待优化
+        criterion = LabelSmoothCELoss().to(device) # 标签平滑损失函数，待优化
     else:
-        criterion = nn.CrossEntropyLoss()
+        criterion = nn.CrossEntropyLoss().to(device)
 
     # TODO:断点续训，功能似乎还没有实现，需要验证
     if len(args.checkpoint) > 0:
@@ -123,12 +123,10 @@ if __name__ == '__main__':
 
         for i, (inputs, labels) in enumerate(train_loader, 0):
             inputs, labels = inputs.to(device), labels.to(device)
-            
+
+            # mixup 数据增强
             if args.mixup and args.mixup_off_epoch <= epoch:
-                lam = np.random.beta(args.mixup_alpha, args.mixup_alpha)
-                inputs = [lam * X + (1 - lam) * X[::-1] for X in inputs]
-                
-                labels = mixup_transform(labels, classes, lam, args.label_smoothing)
+                inputs, labels = mixup_data(inputs, labels, args.mixup_alpha, device)
 
             optimizer.zero_grad()
             outputs = net(inputs)
