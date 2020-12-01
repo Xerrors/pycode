@@ -41,9 +41,8 @@ def mixup_data(inputs, labels, alpha=1.0, device=torch.device("cpu")):
 
     mixed_inputs = lam * inputs + (1 - lam) * inputs[index, :]
     labels_a, labels_b = labels, labels[index]
-    mixed_labels = lam * labels_a + (1-lam) * labels_b
 
-    return Variable(mixed_inputs), Variable(mixed_labels), lam
+    return Variable(mixed_inputs), Variable(labels_a), Variable(labels_b), lam
 
 
 def add_weight_decay(model, weight_decay=1e-5, skip_list=()):

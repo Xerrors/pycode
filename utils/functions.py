@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 def judge_device(gpu="0"):
     """判断当前可用设备，并对服务器的GPU进行配置"""
 
-    if torch.cuda.is_available():
+    if torch.cuda.is_available() and gpu != "X":
         device = torch.device("cuda:"+gpu)
     else:
         device = torch.device("cpu")

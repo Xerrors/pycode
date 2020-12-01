@@ -10,7 +10,7 @@ import torch.nn as nn
 import logging
 
 # 自定义的一些训练优化技巧以及常用函数，放在主文件里面有点乱，就整理出去了
-from utils.tricks import LabelSmoothCELoss, init_net_weight, add_weight_decay, mixup_data, mixup_criterion
+from utils.tricks import LabelSmoothCELoss, init_net_weight, add_weight_decay, mixup_data
 from utils.functions import parse_args, judge_device, save_checkpoint, log_parms, print_and_log
 
 # from models import DemoNet_Gray as Network
@@ -124,20 +124,23 @@ if __name__ == '__main__':
         for i, (inputs, labels) in enumerate(train_loader, 0):
             inputs, labels = inputs.to(device), labels.to(device)
 
-            # mixup 数据增强
-            if args.mixup and args.mixup_off_epoch <= epoch:
-                inputs, labels = mixup_data(inputs, labels, args.mixup_alpha, device)
-
             optimizer.zero_grad()
-            outputs = net(inputs)
-            loss = criterion(outputs, labels)
+
+            # mixup 数据增强
+            if args.mixup and args.mixup_off_epoch <= args.epochs - epoch:
+                inputs, labels_a, labels_b, lam = mixup_data(inputs, labels, args.mixup_alpha, device)
+                outputs = net(inputs)
+                loss = lam * criterion(outputs, labels_a) + (1 - lam) * criterion(outputs, labels_b)
+            else:
+                outputs = net(inputs)
+                loss = criterion(outputs, labels)
+
             loss.backward()
             optimizer.step()
 
             # 输出效果，后面的 Sys 输出也只是为了实现类似进度条的东西
             running_loss += loss.item()
             logging.debug(loss.item())
-
             sys.stdout.write('\r')
             sys.stdout.write('Epoch-{:^3d}[{:>3.2f}%] '.format(epoch, (i + 1) / len(train_loader) * 100))
             sys.stdout.flush()
