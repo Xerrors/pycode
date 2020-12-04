@@ -6,24 +6,23 @@ from torch.autograd import Variable
 
 import numpy as np
 
+class LabelSmoothingLoss(nn.Module):
+    # ref: https://github.com/pytorch/pytorch/issues/7455#issuecomment-513062631
+    def __init__(self, classes, smoothing=0.1, dim=-1):
+        super(LabelSmoothingLoss, self).__init__()
+        self.confidence = 1.0 - smoothing
+        self.smoothing = smoothing
+        self.cls = classes
+        self.dim = dim
 
-class LabelSmoothCELoss(nn.Module):
-    """
-    标签平滑，参考：https://zhuanlan.zhihu.com/p/148487894
-    """
-    def __init__(self):
-        super().__init__()
-
-    def forward(self, pred, label, smoothing=0.1):
-        classes = pred.size()[1]
-        pred = F.softmax(pred, dim=1)
-        one_hot_label = F.one_hot(label, classes).float()
-        smoothed_one_hot_label = (1.0 - smoothing) * one_hot_label + smoothing / classes
-        loss = (-torch.log(pred)) * smoothed_one_hot_label
-        loss = loss.sum(axis=1, keepdim=False)
-        loss = loss.mean()
-
-        return loss
+    def forward(self, pred, target):
+        pred = pred.log_softmax(dim=self.dim)
+        with torch.no_grad():
+            # true_dist = pred.data.clone()
+            true_dist = torch.zeros_like(pred)
+            true_dist.fill_(self.smoothing / (self.cls - 1))
+            true_dist.scatter_(1, target.data.unsqueeze(1), self.confidence)
+        return torch.mean(torch.sum(-true_dist * pred, dim=self.dim))
 
 
 def mixup_data(inputs, labels, alpha=1.0, device=torch.device("cpu")):

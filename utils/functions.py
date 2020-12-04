@@ -3,6 +3,7 @@ import logging
 import argparse
 import time
 import os
+import sys
 
 import matplotlib.pyplot as plt
 
@@ -135,6 +136,7 @@ def log_parms(NAME, args, device):
     print_and_log(msg)
     return model_dir
 
+
 def print_and_log(msg, level="info"):
     """向控制台和日志输出信息"""
     print(msg)
@@ -145,4 +147,8 @@ def print_and_log(msg, level="info"):
         logging.debug(msg)
 
 
+def sys_flush_log(msg):
+    sys.stdout.write('\r')
+    sys.stdout.write(msg)
+    sys.stdout.flush()
     
