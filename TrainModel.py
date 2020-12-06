@@ -11,8 +11,7 @@ import logging
 
 # 自定义的一些训练优化技巧以及常用函数，放在主文件里面有点乱，就整理出去了
 from utils.tricks import LabelSmoothingLoss, init_net_weight, add_weight_decay, mixup_data
-from utils.functions import print_and_log, sys_flush_log
-from trainer import ClassifyTrainer
+from utils.functions import parse_args, judge_device, save_checkpoint, log_parms, print_and_log, sys_flush_log
 
 # from models import DemoNet_Gray as Network
 # from data import MNIST as Dataset
@@ -20,10 +19,10 @@ from trainer import ClassifyTrainer
 
 # 加载本次训练所需要的模型以及数据
 from models import AFFResNeXt38_32x4d_100 as Network
-from dataset import CIFAR100 as Dataset
+from data import CIFAR100 as Dataset
 
+NAME = 'AFFResNeXt38_32x4d_100'
 
-trainer = ClassifyTrainer('AFFResNeXt38_32x4d_100')
 
 def test(net, data, device, criterion):
     """对训练结果进行测试"""
@@ -44,13 +43,15 @@ def test(net, data, device, criterion):
 
 if __name__ == '__main__':
     # 获取参数
-    args = trainer.args
+    args = parse_args()
+    device = judge_device(gpu=args.gpu)
+    model_dir = log_parms(NAME, args, device)
 
     # 加载数据
     train_loader, test_loader = Dataset(args.batch_size, args.num_worker, args.auto_aug)
 
     # 定义网络
-    net = Network().to(trainer.device)
+    net = Network().to(device)
     if args.init_weight:
         init_net_weight(net, args.init_weight)  # 参数初始化
 
@@ -97,11 +98,11 @@ if __name__ == '__main__':
 
     # 损失函数
     if args.label_smoothing:
-        criterion = LabelSmoothingLoss(classes=100).to(trainer.device) # 标签平滑损失函数
+        criterion = LabelSmoothingLoss(classes=100).to(device) # 标签平滑损失函数
     else:
-        criterion = nn.CrossEntropyLoss().to(trainer.device)
+        criterion = nn.CrossEntropyLoss().to(device)
 
-    # 断点续训，功能似乎还没有实现，需要验证
+    # TODO:断点续训，功能似乎还没有实现，需要验证
     if len(args.checkpoint) > 0:
         checkpoint = torch.load(args.checkpoint)  # 加载断点
         net.load_state_dict(checkpoint['net'])  # 加载模型可学习参数
@@ -114,7 +115,7 @@ if __name__ == '__main__':
         best_acc = max(max(acc_list), best_acc)
 
     # 训练
-    print("Start Training! Trining on {}.".format(trainer.device))
+    print("Start Training! Trining on {}.".format(device))
     for epoch in range(start_epoch, args.epochs):
         net.train() # 切换为训练模式
         running_loss = 0.0  # 运行时的 loss
@@ -122,11 +123,11 @@ if __name__ == '__main__':
         epoch_start_time = time.time()  # 记录起始时间
 
         for i, (inputs, labels) in enumerate(train_loader, 0):
-            inputs, labels = inputs.to(trainer.device), labels.to(trainer.device)
+            inputs, labels = inputs.to(device), labels.to(device)
             optimizer.zero_grad()
             # mixup 数据增强
             if args.mixup and args.mixup_off_epoch <= args.epochs - epoch:
-                inputs, labels_a, labels_b, lam = mixup_data(inputs, labels, args.mixup_alpha, trainer.device)
+                inputs, labels_a, labels_b, lam = mixup_data(inputs, labels, args.mixup_alpha, device)
                 outputs = net(inputs)
                 loss = lam * criterion(outputs, labels_a) + (1 - lam) * criterion(outputs, labels_b)
             else:
@@ -144,27 +145,28 @@ if __name__ == '__main__':
 
         # 计算本 Epoch 的损失以及测试集上的准确率
         train_loss = running_loss / batch_num
-        cur_acc, test_loss = test(net, test_loader, trainer.device, criterion)
+        cur_acc, test_loss = test(net, test_loader, device, criterion)
         acc_list.append(cur_acc)  # 准确率数组
         train_losses.append(train_loss)  # 训练损失数组
         test_losses.append(test_loss)  # 测试集损失数组
         # 输出损失信息并记录到日志
         use_time = time.time() - epoch_start_time  # 一个 epoch 的用时
-        print_and_log("Epoch-{:^3d} T-Loss: {:.3f}, E-Loss: {:.3f}, Time: {:.2f}s, Need: {:.2f}h, LR: {:.4f}, Acc: {:.2f}%".format(
+        msg = "Epoch-{:^3d} T-Loss: {:.3f}, E-Loss: {:.3f}, Time: {:.2f}s, Need: {:.2f}h, LR: {:.4f}, Acc: {:.2f}%".format(
             epoch,
             train_loss, test_loss,
             use_time, use_time / 3600 * (args.epochs - epoch),
             optimizer.state_dict()['param_groups'][0]['lr'],
-            cur_acc * 100))
+            cur_acc * 100)
+        print_and_log(msg)
 
         # 保存断点
-        trainer.save_checkpoint(net, optimizer, scheduler, train_losses, test_losses, acc_list, best_acc, epoch)
+        save_checkpoint(model_dir, net, optimizer, scheduler, epoch, acc_list, train_losses, test_losses, best_acc)
         best_acc = max(cur_acc, best_acc)
 
     # 输出以及数据的保存，对训练无影响
     print_and_log('### Finished Training! Best Acc: {:2f}%'.format(best_acc * 100))
     train_info = {"training_loss": train_losses, "test_loss": test_losses, "acc_list": acc_list}
-    torch.save(train_info, trainer.model_dir + "/training_info.pth")
-    new_model_dir = trainer.model_dir + '_' + str(best_acc * 10000)[:4]
-    os.rename(trainer.model_dir, new_model_dir)  # 更改文件夹名称，加上准确率
+    torch.save(train_info, model_dir + "/training_info.pth")
+    new_model_dir = model_dir + '_' + str(best_acc * 10000)[:4]
+    os.rename(model_dir, new_model_dir)  # 更改文件夹名称，加上准确率
     os.remove(new_model_dir+"/checkpoint.pth")
