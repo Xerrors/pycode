@@ -3,8 +3,6 @@ import torchvision
 import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
 
-import logging
-
 data_dir = "./data"
 
 
@@ -66,18 +64,15 @@ def CIFAR100(batch_size, num_worker, auto_aug=False):
 
 
 def MNIST(batch_size, num_worker):
-    train_loader = torch.utils.data.DataLoader(
-        torchvision.datasets.MNIST(data_dir, train=True, download=True,
-                                   transform=torchvision.transforms.Compose([
-                                       torchvision.transforms.ToTensor(),
-                                       torchvision.transforms.Normalize(
-                                           (0.1307,), (0.3081,))
-                                   ])), batch_size=batch_size, shuffle=True)
-    test_loader = torch.utils.data.DataLoader(
-        torchvision.datasets.MNIST(data_dir, train=False, download=True,
-                                   transform=torchvision.transforms.Compose([
-                                       torchvision.transforms.ToTensor(),
-                                       torchvision.transforms.Normalize(
-                                           (0.1307,), (0.3081,))
-                                   ])), batch_size=batch_size, shuffle=True)
+    transform = transforms.Compose([
+        torchvision.transforms.ToTensor(),
+        torchvision.transforms.Normalize((0.1307,), (0.3081,))
+    ])
+
+    train_set = torchvision.datasets.MNIST(root=data_dir, train=True, download=True, transform=transform)
+    train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=True, num_workers=num_worker)
+
+    test_set = torchvision.datasets.MNIST(root=data_dir, train=False, download=True, transform=transform)
+    test_loader = DataLoader(test_set, batch_size=batch_size, shuffle=True, num_workers=num_worker)
+
     return train_loader, test_loader
