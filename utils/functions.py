@@ -30,6 +30,7 @@ def save_pic(save_dir, ax1_data, ax2_data=None):
 
     fig.tight_layout()
     plt.savefig(save_dir+'/training_info.jpg')
+    plt.close()
 
 
 def print_and_log(msg, level="info"):
