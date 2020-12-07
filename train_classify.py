@@ -150,8 +150,8 @@ if __name__ == '__main__':
         test_losses.append(test_loss)  # 测试集损失数组
         # 输出损失信息并记录到日志
         use_time = time.time() - epoch_start_time  # 一个 epoch 的用时
-        print_and_log("Epoch-{:^3d} T-Loss: {:.3f}, E-Loss: {:.3f}, Time: {:.2f}s, Need: {:.2f}h, LR: {:.4f}, Acc: {:.2f}%".format(
-            epoch,
+        print_and_log("[{:^3d}/{}], T-Loss: {:.3f}, E-Loss: {:.3f}, Time: {:.2f}s, Need: {:.2f}h, LR: {:.4f}, Acc: {:.2f}%".format(
+            epoch, args.epochs,
             train_loss, test_loss,
             use_time, use_time / 3600 * (args.epochs - epoch),
             optimizer.state_dict()['param_groups'][0]['lr'],
