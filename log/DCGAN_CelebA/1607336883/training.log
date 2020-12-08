@@ -1,0 +1,15 @@
+[INFO] 2020-12-07 18:28:03,672: ---
+Name: DCGAN_CelebA
+Device: cuda:2
+Debug: False
+---
+Epochs: 5
+Batch Size: 512
+Num Worker: 8
+---
+
+[INFO] 2020-12-07 18:29:54,589:  > D-Loss:5.968, G-Loss:0.769
+[INFO] 2020-12-07 18:31:43,032:  > D-Loss:4.514, G-Loss:0.662
+[INFO] 2020-12-07 18:33:31,459:  > D-Loss:3.979, G-Loss:0.744
+[INFO] 2020-12-07 18:35:20,068:  > D-Loss:3.599, G-Loss:0.710
+[INFO] 2020-12-07 18:37:08,628:  > D-Loss:3.396, G-Loss:0.719
