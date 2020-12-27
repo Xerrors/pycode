@@ -1,6 +1,7 @@
 import logging
 import sys
-
+import os
+import torch
 import matplotlib.pyplot as plt
 
 def save_pic(save_dir, ax1_data, ax2_data=None):
@@ -43,7 +44,34 @@ def print_and_log(msg, level="info"):
 
 
 def sys_flush_log(msg):
-    sys.stdout.write('\r')
-    sys.stdout.write(msg)
-    sys.stdout.flush()
+    # V1
+    # sys.stdout.write('\r')
+    # sys.stdout.write(msg)
+    # sys.stdout.flush()
+
+    # V2
+    print('\r', msg, end="")
+
+
+# from: https://github.com/MTG/DCASE-models/blob/e371511b49/dcase_models/util/files.py
+def mkdir_if_not_exists(path, parents=False):
+    """ Make dir if does not exists.
+    If parents is True, also creates all parents needed.
+    Parameters
+    ----------
+    path : str
+        Path to folder to be created.
+    parents : bool, optional
+        If True, also creates all parents needed.
+    """
+    if not os.path.exists(path):
+        if parents:
+            os.makedirs(path)
+        else:
+            os.mkdir(path)
     
+def calc_accuracy(predictions, labels):
+    """ 比较准确率 """
+    pred = torch.max(predictions, 1)[1]
+    correct = pred.eq(labels.data.view_as(pred)).sum()
+    return correct

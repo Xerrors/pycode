@@ -1,3 +1,4 @@
+import math
 import torch
 import torch.nn.functional as F
 import torch.nn as nn
@@ -86,4 +87,20 @@ def weights_init(m):
     elif classname.find('BatchNorm') != -1:
         nn.init.normal_(m.weight.data, 1.0, 0.02)
         nn.init.constant_(m.bias.data, 0)
+
+def warm_up_with_cosine(args, T_max=None):
+    """ 余弦学习率 实际上只是半个周期，余弦从 1 到 0 罢了
+        <https://zhuanlan.zhihu.com/p/148487894>
+    args:
+        - args: 参数
+        - T_max: 关于周期的，如果设置周期，将按照半周期衰减，否则从 1 衰减到 0 
+    """
+    if T_max:
+        warm_up_with_cosine_lr = lambda epoch: epoch / args.warmup_epochs if epoch <= args.warmup_epochs else 0.5 * (
+            math.cos((epoch - args.warmup_epochs) % (T_max*2) / (T_max*2) * math.pi) + 1)
+    else:
+        warm_up_with_cosine_lr = lambda epoch: epoch / args.warmup_epochs if epoch <= args.warmup_epochs else 0.5 * (
+            math.cos((epoch - args.warmup_epochs) / (args.epochs - args.warmup_epochs) * math.pi) + 1)
+    
+    return warm_up_with_cosine_lr
 

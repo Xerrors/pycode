@@ -89,14 +89,14 @@ class Bottleneck(nn.Module):
 
 class ResNeXt_Cifar(nn.Module):
 
-    def __init__(self, block, num_blocks_in_layer, cardinality, bottleneck_width, num_classes=100):
+    def __init__(self, block, num_blocks_in_layer, cardinality, bottleneck_width, num_classes=100, channel=3):
         super(ResNeXt_Cifar, self).__init__()
         self.in_channels = 64
         self.cardinality = cardinality
         self.bottleneck_width = bottleneck_width
 
         self.layers = nn.Sequential(
-            nn.Conv2d(3, 64, kernel_size=3, stride=1, padding=1, bias=False),
+            nn.Conv2d(channel, 64, kernel_size=3, stride=1, padding=1, bias=False),
             nn.BatchNorm2d(64),
             nn.ReLU(inplace=True),
 
@@ -141,3 +141,7 @@ def AFFResNeXt38_32x4d_100():
 
 def AFFResNeXt38_32x4d_10():
     return resneXt_cifar(n=38, cardinality=32, bottleneck_width=4, num_classes=10)
+
+
+def AFFResNeXt38_32x4d_3_1c():
+    return resneXt_cifar(n=38, cardinality=32, bottleneck_width=4, num_classes=3, channel=1)
