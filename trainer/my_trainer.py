@@ -60,9 +60,9 @@ class MyTrainer():
         print_and_log(msg)
     
 
-    def start_with_checkpoint():
+    def start_with_checkpoint(self):
         pass
 
 
-    def save_checkpoint():
+    def save_checkpoint(self):
         pass

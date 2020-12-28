@@ -1,8 +1,10 @@
 import torch
 import logging
+import time
+import os
 
 from trainer import MyTrainer
-from utils.functions import print_and_log, save_pic
+from utils.functions import print_and_log, save_pic, calc_accuracy, sys_flush_log
 
 
 class ClassifyTrainer(MyTrainer):
@@ -66,8 +68,45 @@ class ClassifyTrainer(MyTrainer):
 
         print_and_log(msg)
 
+    
+    def train(self, train_loader):
+        self.batch_num = len(train_loader)
+        self.dataset_size = len(train_loader.dataset)
+        self.epoch_start_time = time.time()  # 记录起始时间
 
-    def save_checkpoint(self, model, optimizer, scheduler):
+        self.running_loss = 0.0  # 运行时的 loss
+        self.correct = 0
+
+    
+    def step(self, i, loss, correct):
+        self.running_loss += loss.item()
+        self.correct += correct
+
+        logging.debug(loss.item())
+        logging.debug(self.correct / self.args.batch_size / (i+1) * 100)
+        sys_flush_log('Epoch-{:^3d}[{:>3.2f}%] '.format(self.epoch, (i + 1) / self.batch_num * 100))
+
+    
+    def epoch_log(self, cur_acc, test_loss, lr):
+        self.train_loss = self.running_loss / self.batch_num
+        self.train_acc = self.correct / self.dataset_size
+
+        self.acc_list.append(cur_acc)  # 准确率数组
+        self.train_losses.append(self.train_loss)  # 训练损失数组
+        self.test_losses.append(test_loss)  # 测试集损失数组
+
+        # 输出损失信息并记录到日志
+        use_time = time.time() - self.epoch_start_time  # 一个 epoch 的用时
+        print_and_log(
+            " Loss: {:.3f} / {:.3f}  Time: {:.2f}s / {:.2f}h  LR: {:.4f}  Acc: {:.2f}% / {:.2f}%".format(
+                self.train_loss, test_loss,
+                use_time, use_time / 3600 * (self.args.epochs - self.epoch),
+                lr, self.train_acc * 100, cur_acc * 100))
+
+
+    def save_checkpoint(self, model, optimizer, scheduler, cur_acc, test_loss):
+
+        self.epoch_log(cur_acc, test_loss, optimizer.state_dict()['param_groups'][0]['lr'])
 
         self.epoch = len(self.acc_list)
 
@@ -124,7 +163,7 @@ class ClassifyTrainer(MyTrainer):
         train_info = {"training_loss": self.train_losses, "test_loss": self.test_losses, "acc_list": self.acc_list}
         torch.save(train_info, os.path.join(self.model_dir, "training_info.pth"))
 
-        new_model_dir = self.model_dir + '_' + str(best_acc * 10000)[:4]
+        new_model_dir = self.model_dir + '_' + str(self.best_acc * 10000)[:4]
         os.rename(self.model_dir, new_model_dir)  # 更改文件夹名称，加上准确率
         os.remove(os.path.join(new_model_dir, "checkpoint.pth"))
 

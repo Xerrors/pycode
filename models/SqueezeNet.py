@@ -1,9 +1,9 @@
-import torch
 import torch.nn as nn
 
 
 class FireBlock(nn.Module):
     """ fire block in Squeeze Net """
+
     def __init__(self, in_num, out_num, sr=0.125, pct=0.5):
         super(FireBlock, self).__init__()
         s1_num = int(out_num * sr)
@@ -11,7 +11,6 @@ class FireBlock(nn.Module):
         self.e1 = nn.Conv2d(s1_num, int(out_num * (1 - pct)), kernel_size=1)
         self.e3 = nn.Conv2d(s1_num, int(out_num * pct), kernel_size=3, padding=1)
         self.relu = nn.ReLU(inplace=True)
-
 
     def forward(self, x):
         out = self.relu(self.s1(x))
@@ -21,9 +20,9 @@ class FireBlock(nn.Module):
         return out
 
 
-
 class SqueezeNet(nn.Module):
     """ Squeeze Net <http://arxiv.org/abs/1602.07360> """
+
     def __init__(self):
         super(SqueezeNet, self).__init__()
         base_e = 128
@@ -55,6 +54,9 @@ class SqueezeNet(nn.Module):
         return out
 
 
+
+""" 下面的部分是我从 Pytorch 上面找到的 """
+
 import torch
 import torch.nn as nn
 import torch.nn.init as init
@@ -71,11 +73,11 @@ model_urls = {
 class Fire(nn.Module):
 
     def __init__(
-        self,
-        inplanes: int,
-        squeeze_planes: int,
-        expand1x1_planes: int,
-        expand3x3_planes: int
+            self,
+            inplanes: int,
+            squeeze_planes: int,
+            expand1x1_planes: int,
+            expand3x3_planes: int
     ) -> None:
         super(Fire, self).__init__()
         self.inplanes = inplanes
@@ -99,10 +101,10 @@ class Fire(nn.Module):
 class SqueezeNet_Torch(nn.Module):
 
     def __init__(
-        self,
-        version: str = '1_0',
-        num_classes: int = 1000,
-        channel=3
+            self,
+            version: str = '1_0',
+            num_classes: int = 1000,
+            channel=3
     ) -> None:
         super(SqueezeNet_Torch, self).__init__()
         self.num_classes = num_classes
@@ -177,5 +179,3 @@ def squeezenet1_0(pretrained: bool = False, progress: bool = True, **kwargs: Any
 
 def squeezenet1_1(pretrained: bool = False, progress: bool = True, **kwargs: Any) -> SqueezeNet_Torch:
     return _squeezenet('1_1', pretrained, progress, **kwargs)
-
-

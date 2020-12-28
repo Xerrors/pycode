@@ -101,10 +101,7 @@ if __name__ == '__main__':
     print("Start Training! Trining on {}.".format(trainer.device))
     for epoch in range(trainer.epoch, args.epochs):
         net.train()  # 切换为训练模式
-        running_loss = 0.0  # 运行时的 loss
-        correct = 0
-        batch_num = len(train_loader)
-        epoch_start_time = time.time()  # 记录起始时间
+        trainer.train(train_loader)
         
         for i, (inputs, labels) in enumerate(train_loader, 0):
             inputs, labels = inputs.to(trainer.device), labels.to(trainer.device)
@@ -122,35 +119,14 @@ if __name__ == '__main__':
             loss.backward()
             optimizer.step()
 
-
-            running_loss += loss.item()
-            correct += calc_accuracy(outputs, labels)
-
-            logging.debug(loss.item())
-            logging.debug(correct / args.batch_size / (i+1) * 100)
-            sys_flush_log('Epoch-{:^3d}[{:>3.2f}%] '.format(epoch, (i + 1) / batch_num * 100))
-
+            trainer.step(i, loss, calc_accuracy(outputs, labels))
 
         scheduler.step()  # 更新学习率
 
         # 计算本 Epoch 的损失以及测试集上的准确率
-        train_loss = running_loss / batch_num
         cur_acc, test_loss = test(net, test_loader, criterion, trainer.device)
 
-        trainer.acc_list.append(cur_acc)  # 准确率数组
-        trainer.train_losses.append(train_loss)  # 训练损失数组
-        trainer.test_losses.append(test_loss)  # 测试集损失数组
-
-        # 输出损失信息并记录到日志
-        use_time = time.time() - epoch_start_time  # 一个 epoch 的用时
-        print_and_log(
-            "[{:^3d}/{}], Loss: {:.3f}/{:.3f}, Time: {:.2f}s/{:.2f}h, LR: {:.4f}, Acc: {:.2f}%/{:.2f}%".format(
-                epoch, args.epochs, train_loss, test_loss,
-                use_time, use_time / 3600 * (args.epochs - epoch),
-                optimizer.state_dict()['param_groups'][0]['lr'],
-                correct / len(train_loader.dataset) * 100, cur_acc * 100))
-
-        # 保存断点
-        trainer.save_checkpoint(net, optimizer, scheduler)
+        # 保存断点，并输出训练情况
+        trainer.save_checkpoint(net, optimizer, scheduler, cur_acc, test_loss)
 
     trainer.done()
