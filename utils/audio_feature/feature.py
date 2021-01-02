@@ -4,7 +4,7 @@ import librosa
 import os
 import time
 import sys
-import .config
+import config
 import spec_augment_pytorch
 # import matplotlib.pyplot as plt
 import pickle

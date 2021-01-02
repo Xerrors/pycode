@@ -56,6 +56,8 @@ import torch
 
 
 
+
+
 def time_warp(spec, W=5):
 
     spec = spec.view(1, spec.shape[0], spec.shape[1])
@@ -86,7 +88,7 @@ def time_warp(spec, W=5):
 
     src_pts, dest_pts = torch.tensor([[[y, point_to_warp]]]), torch.tensor([[[y, point_to_warp + dist_to_warp]]])
 
-    warped_spectro, dense_flows = SparseImageWarp.sparse_image_warp(spec, src_pts, dest_pts)
+    warped_spectro, dense_flows = sparse_image_warp(spec, src_pts, dest_pts)
 
     return warped_spectro.squeeze(3)
 

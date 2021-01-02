@@ -62,7 +62,7 @@ import random
 
 # matplotlib.use('TkAgg')
 
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 from .sparse_image_warp_pytorch import sparse_image_warp
 

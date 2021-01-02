@@ -40,7 +40,7 @@ class ClassifyTrainer(MyTrainer):
         self.parser.add_argument('--weight-decay', type=float, default=0.0001)
         self.parser.add_argument('--momentum', type=float, default=0.9)
         self.parser.add_argument('--nesterov', action='store_false')
-        self.parser.add_argument('--milestones', type=str, default='[50,80]')
+        self.parser.add_argument('--milestones', type=str, default='')
         # others
         self.parser.add_argument('--base-line', type=float, default=0.6)
         self.parser.add_argument('--init-weight', type=str, default="kaiming")
@@ -49,6 +49,7 @@ class ClassifyTrainer(MyTrainer):
     def log_args(self):
         super(ClassifyTrainer, self).log_args()
         args = self.args
+        logging.info(args)
         msg = "The parameters of image classifier\n---\n"
         msg += "Base LR: {}\nLR Decay: {}\nWeight Decay: {}\nMomentum: {}\nMilestones: {}\nInit Weight: {}\n---\n".format(
             args.base_lr, args.lr_decay, args.weight_decay, args.momentum, args.milestones, args.init_weight
@@ -97,10 +98,13 @@ class ClassifyTrainer(MyTrainer):
 
         # 输出损失信息并记录到日志
         use_time = time.time() - self.epoch_start_time  # 一个 epoch 的用时
+        required_minutes = int(use_time * (self.args.epochs - self.epoch) // 60)
+        required_time = "{:0>2d}h{:0>2d}m".format(required_minutes // 60, required_minutes % 60)
+
         print_and_log(
-            " Loss: {:.3f} / {:.3f}  Time: {:.2f}s / {:.2f}h  LR: {:.4f}  Acc: {:.2f}% / {:.2f}%".format(
+            " Loss: {:.3f} / {:.3f}  Time: {:.2f}s / {}  LR: {:.4f}  Acc: {:.2f}% / {:.2f}%".format(
                 self.train_loss, test_loss,
-                use_time, use_time / 3600 * (self.args.epochs - self.epoch),
+                use_time, required_time,
                 lr, self.train_acc * 100, cur_acc * 100))
 
 
@@ -148,7 +152,7 @@ class ClassifyTrainer(MyTrainer):
         self.test_losses = checkpoint['test_losses']
         self.acc_list = checkpoint['acc_list']
         self.best_acc = checkpoint['best_acc']
-        self.epoch = len(train_losses)  # 设置开始的epoch
+        self.epoch = len(self.train_losses)  # 设置开始的epoch
 
         print_and_log("This Mode Will Training From Epoch {} Base On Checkpoint That Stored In {}".format(
             self.epoch, self.checkpoint_path
@@ -163,7 +167,8 @@ class ClassifyTrainer(MyTrainer):
         train_info = {"training_loss": self.train_losses, "test_loss": self.test_losses, "acc_list": self.acc_list}
         torch.save(train_info, os.path.join(self.model_dir, "training_info.pth"))
 
-        new_model_dir = self.model_dir + '_' + str(self.best_acc * 10000)[:4]
+        logging.info(str(self.best_acc * 10000))
+        new_model_dir = self.model_dir + '_' + str(self.best_acc.item() * 10000)[:4]
         os.rename(self.model_dir, new_model_dir)  # 更改文件夹名称，加上准确率
         os.remove(os.path.join(new_model_dir, "checkpoint.pth"))
 

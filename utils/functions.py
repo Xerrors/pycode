@@ -22,7 +22,7 @@ def save_pic(save_dir, ax1_data, ax2_data=None):
     ax1.set_xlabel('iters')
     for key, value in ax1_data.items():
         ax1.plot(iters, value, dashes=[6, 2], label=key)
-    ax1.legend() # 会遮挡准确率曲线
+    ax1.legend(loc=3) # 会遮挡准确率曲线
 
     if ax2_data:
         ax2 = ax1.twinx()

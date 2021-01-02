@@ -135,13 +135,6 @@ def resneXt_cifar(n, cardinality, bottleneck_width, **kwargs):
     return model
 
 
-def AFFResNeXt38_32x4d_100():
-    return resneXt_cifar(n=38, cardinality=32, bottleneck_width=4, num_classes=100)
+def AFFResNeXt38_32x4d(num_classes=3, channel=1):
+    return resneXt_cifar(n=38, cardinality=32, bottleneck_width=4, num_classes=num_classes, channel=channel)
 
-
-def AFFResNeXt38_32x4d_10():
-    return resneXt_cifar(n=38, cardinality=32, bottleneck_width=4, num_classes=10)
-
-
-def AFFResNeXt38_32x4d_3_1c():
-    return resneXt_cifar(n=38, cardinality=32, bottleneck_width=4, num_classes=3, channel=1)

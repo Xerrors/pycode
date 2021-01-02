@@ -6,51 +6,72 @@ class FireBlock(nn.Module):
 
     def __init__(self, in_num, out_num, sr=0.125, pct=0.5):
         super(FireBlock, self).__init__()
-        s1_num = int(out_num * sr)
-        self.s1 = nn.Conv2d(in_num, s1_num, kernel_size=1)
-        self.e1 = nn.Conv2d(s1_num, int(out_num * (1 - pct)), kernel_size=1)
-        self.e3 = nn.Conv2d(s1_num, int(out_num * pct), kernel_size=3, padding=1)
+
+        sequeeze_planes = int(out_num * sr)
+        expand_1_planes = int(out_num * (1 - pct))
+        expand_3_planes = int(out_num * pct)
+
+        self.s1 = nn.Conv2d(in_num, sequeeze_planes, kernel_size=1)
+        self.e1 = nn.Conv2d(sequeeze_planes, expand_1_planes, kernel_size=1)
+        self.e3 = nn.Conv2d(sequeeze_planes, expand_3_planes, kernel_size=3, padding=1)
         self.relu = nn.ReLU(inplace=True)
 
     def forward(self, x):
         out = self.relu(self.s1(x))
-        out1 = self.e1(out)
-        out2 = self.e3(out)
-        out = self.relu(torch.cat((out1, out2), 1))
-        return out
+
+        return torch.cat((
+            self.relu(self.e1(out)),
+            self.relu(self.e3(out))
+        ), 1)
 
 
 class SqueezeNet(nn.Module):
-    """ Squeeze Net <http://arxiv.org/abs/1602.07360> """
+    """ Squeeze Net <http://arxiv.org/abs/1602.07360>.
 
-    def __init__(self):
+    按照原论文的结构实现，实现的效果不太好，之后参考了 Pytorch 的官方写法，
+    添加了一些遗漏的网络层，同时添加了部分参数的初始化部分。
+    """
+
+    def __init__(self, num_classes=1000, channel=3):
         super(SqueezeNet, self).__init__()
-        base_e = 128
         sr = 0.125
         pct = 0.5
 
+        final_conv = nn.Conv2d(512, num_classes, kernel_size=1, stride=1)
+
         self.fire = nn.Sequential(
-            nn.Conv2d(1, 96, kernel_size=7, stride=(1, 2)),
-            nn.MaxPool2d(kernel_size=3, stride=2),
-            FireBlock(96, 128, sr, pct),
+            nn.Conv2d(channel, 64, kernel_size=3, stride=2),
+            nn.ReLU(inplace=True),
+            nn.MaxPool2d(kernel_size=3, stride=2, ceil_mode=True),
+            FireBlock(64, 128, sr, pct),
             FireBlock(128, 128, sr, pct),
+            nn.MaxPool2d(kernel_size=3, stride=2, ceil_mode=True),
             FireBlock(128, 256, sr, pct),
-            nn.MaxPool2d(kernel_size=3, stride=2),
             FireBlock(256, 256, sr, pct),
+            nn.MaxPool2d(kernel_size=3, stride=2, ceil_mode=True),
             FireBlock(256, 384, sr, pct),
             FireBlock(384, 384, sr, pct),
             FireBlock(384, 512, sr, pct),
-            nn.MaxPool2d(kernel_size=3, stride=2),
             FireBlock(512, 512, sr, pct),
             nn.Dropout(p=0.5),
-            nn.Conv2d(512, 3, kernel_size=1, stride=1),
+            final_conv,
+            nn.ReLU(inplace=True),
             nn.AdaptiveAvgPool2d(1)
         )
 
+        # 此部分对参数进行初始化的代码参考了官方的代码
+        for m in self.modules():
+            if isinstance(m, nn.Conv2d):
+                if m is final_conv:
+                    init.normal_(m.weight, mean=0.0, std=0.01)
+                else:
+                    init.kaiming_uniform_(m.weight)
+                if m.bias is not None:
+                    init.constant_(m.bias, 0)
+
     def forward(self, x):
         out = self.fire(x)
-        out = out.view(out.size(0), -1)
-        # out = torch.softmax(out, dim=1)
+        out = torch.flatten(out, 1)
         return out
 
 
